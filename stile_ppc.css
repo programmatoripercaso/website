@@ -13,9 +13,29 @@
     
     --bordo: 10px;
 }
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Roboto, Tahoma, Verdana, Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size:3em;
+    margin:0;
+}
+
+h3 {
+    color: var(--contrasto);
+    font-size: 2em;
+    margin: 2em 0 0;
+}
+
+p {
+    margin:0;
 }
 
 a {
@@ -27,18 +47,73 @@ a {
 header {
     text-align: center;
     color: var(--bianco);
-    background-color: var(--fondochiaro);
-    padding: 5em 10em;
+    background-color: var(--fondoscuro);
+    padding: 5em 5%;
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-size: 100px;
+}
+
+p#about {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1em;
+    line-height: 1.5em;
+}
+
+#counter {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 3em auto 0;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.counter-card {
+    margin: auto 11%;
+    padding: 1em 0;
+}
+
+.icon {
+    /* cambia il colore dell'icona > https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: brightness(0) saturate(100%) invert(79%) sepia(1%) saturate(1623%) hue-rotate(49deg) brightness(128%) contrast(79%);
+    margin-bottom: 1em;
+}
+
+p.numero {
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--contrasto);
+}
+
+p.caption {
+    font-size: 1.5em;
+    font-variant: small-caps;
 }
 
 main {
+    text-align: center;
+}
+
+.anno {
     color: var(--nero);
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 3em;
+    padding: 2em;
     width: 90%;
     justify-content: space-around;
+}
+
+hr {
+    width: 50%;
+    border-style: solid;
+    color: var(--contrasto);
+    height: 1px;
+    margin-bottom: 3.75em;
 }
 
 .card {
@@ -78,11 +153,12 @@ p.card-autore {
 footer {
     color: var(--bianco);
     background-color: var(--fondoscuro);
-    padding: 1em 10em;
+    padding: 1em 5%;
     display: flex;
     justify-content: space-between;
 }
 
-footer>p {
-    margin: 0;
-}
+
+@media screen and (min-width: 800px) {
+    #about {width: 50%; margin: 1.5em auto;}
+  }

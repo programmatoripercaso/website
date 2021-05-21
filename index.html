@@ -1,65 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="stile_ppc.css" type="text/css">
     <title>Programmatori per caso</title>
 </head>
-    
+
 <body>
     <header>
-        <h1>Programmatori per caso</h1>
-        <p>Qui il sottotitolo in cui scriviamo una cosa</p>
+        <span class="material-icons-outlined">
+            &#xe1b2;
+        </span>
+        <h1>programmatori<br>per caso</h1>
+        <p id="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, ea fugiat! Pariatur expedita odio
+            neque. Facere, nam cum doloremque ullam omnis cumque odit maxime id consectetur ab amet adipisci animi?</p>
+        <section id="counter">
+            <div class="counter-card">
+                <img class="icon" src="static/icon_progetti.svg" height="60x" alt="">
+                <p class="numero">5</p>
+                <p class="caption">progetti</p>
+            </div>
+            <div class="counter-card">
+                <img class="icon" src="static/icon_umani.svg" height="60px" alt="">
+                <p class="numero">30</p>
+                <p class="caption">umani</p>
+            </div>
+            <div class="counter-card">
+                <img class="icon" src="static/icon_anno.svg" height="60px" alt="">
+                <p class="numero">1</p>
+                <p class="caption">anno</p>
+            </div>
+        </section>
     </header>
-    
+
     <main>
-        <div class="card">
-            <img src="https://picsum.photos/seed/foto1/200">
-            <div class="card-testo">
-                <p class="card-titolo">Titolo</p>
-                <p class="card-autore">Nome Cognome</p>
-            </div>        
-        </div>
-        
-        <div class="card">
-            <img src="https://picsum.photos/seed/foto2/200">
-            <div class="card-testo">
-                <p class="card-titolo">Titolo</p>
-                <p class="card-autore">Nome Cognome</p>
-            </div>        
-        </div>
-        
-        <div class="card">
-            <img src="https://picsum.photos/seed/foto3/200">
-            <div class="card-testo">
-                <p class="card-titolo">Titolo</p>
-                <p class="card-autore">Nome Cognome</p>
-            </div>        
-        </div>
-        
-        <div class="card">
-            <img src="https://picsum.photos/seed/foto4/200">
-            <div class="card-testo">
-                <p class="card-titolo">Titolo</p>
-                <p class="card-autore">Nome Cognome</p>
-            </div>        
-        </div>
-        
-        <div class="card">
-            <img src="https://picsum.photos/seed/foto5/200">
-            <div class="card-testo">
-                <p class="card-titolo">Titolo</p>
-                <p class="card-autore">Nome Cognome</p>
-            </div>        
-        </div>
+        <h3>2021</h3>
+        <section class="anno">
+            <div class="card">
+                <img src="https://picsum.photos/seed/foto1/200">
+                <div class="card-testo">
+                    <p class="card-titolo">Titolo</p>
+                    <p class="card-autore">Nome Cognome</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/seed/foto2/200">
+                <div class="card-testo">
+                    <p class="card-titolo">Titolo</p>
+                    <p class="card-autore">Nome Cognome</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/seed/foto3/200">
+                <div class="card-testo">
+                    <p class="card-titolo">Titolo</p>
+                    <p class="card-autore">Nome Cognome</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/seed/foto4/200">
+                <div class="card-testo">
+                    <p class="card-titolo">Titolo</p>
+                    <p class="card-autore">Nome Cognome</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/seed/foto5/200">
+                <div class="card-testo">
+                    <p class="card-titolo">Titolo</p>
+                    <p class="card-autore">Nome Cognome</p>
+                </div>
+            </div>
+        </section>
+        <hr>
     </main>
-    
+
     <footer>
-            <div id="logo-titolo">Logo/Titolo</div>
-            <a href="#">Info</a>
+        <div id="logo-titolo">Logo/Titolo</div>
+        <a href="#">Info</a>
     </footer>
 
 </body>
+
 </html>
