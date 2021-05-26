@@ -163,3 +163,42 @@ footer {
     h1 {font-size: 3em;}
     #about {width: 50%; margin: 1.5em auto;}
   }
+
+
+
+/*pagina interna progetto*/
+p#about-interno {    
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1em;
+    line-height: 1.5em;
+}
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size:1.5em;
+    margin-bottom: 25px;
+}
+
+.mockup>img {
+    width: 200px;
+    margin: 20px;
+    border-radius: var(--bordo);
+}
+
+.riga {
+    margin: 20px auto;
+}
+
+p#testo-interno {
+    max-width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto 0 auto;
+    line-height: 1.5em;
+}
+
+p#link {
+    margin: 10px auto 20px auto;
+}
