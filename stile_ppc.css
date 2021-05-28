@@ -223,7 +223,7 @@ p#info-testo {
 }
 
 .contenitore-testo-info {    
-    flex-basis: 80%;
+    flex-basis: 90%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -241,5 +241,5 @@ p#info-testo2 {
 }
 
 .immagini-info {
-    width: 90%;
+    width: 100%;
 }
