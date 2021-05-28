@@ -159,15 +159,6 @@ footer {
 }
 
 
-@media screen and (min-width: 800px) {
-    h1 {font-size: 3em;}
-    #about {width: 50%; margin: 1.5em auto;}
-    .contenitore-testo-info {flex-basis: 40%;}
-    #contenitore-invert {flex-direction: row-reverse;}
-    .immagini-info {width: auto; height: 300px;}
-}
-
-
 
 /*pagina interna progetto*/
 p#about-interno {    
@@ -242,4 +233,19 @@ p#info-testo2 {
 
 .immagini-info {
     width: 100%;
+    margin-top: 3em;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    h1 {font-size: 3em;}
+    #about {width: 50%; margin: 1.5em auto;}
+    .contenitore-testo-info {flex-basis: 40%;}
+    #contenitore-invert {flex-direction: row-reverse;}
+    .immagini-info {width: auto; height: 300px; margin-top: 0;}
 }
