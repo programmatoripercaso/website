@@ -31,7 +31,7 @@ h1 {
 h3 {
     color: var(--contrasto);
     font-size: 2em;
-    margin: 2em 0 0;
+    margin: 0;
 }
 
 p {
@@ -96,6 +96,7 @@ p.caption {
 
 main {
     text-align: center;
+    margin: 3em auto;
 }
 
 .anno {
@@ -103,7 +104,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 2em;
+    padding: 2em 2em 0 2em;
     width: 90%;
     justify-content: space-around;
 }
@@ -164,7 +165,7 @@ footer {
 p#about-interno {    
     text-align: center;
     font-size: 1.2em;
-    margin-top: 1em;
+    margin: 1em auto;
     line-height: 1.5em;
 }
 
@@ -193,8 +194,16 @@ p#testo-interno {
     line-height: 1.5em;
 }
 
-p#link {
-    margin: 10px auto 20px auto;
+#link-progetto {
+    border: 0px solid var(--contrasto);
+    border-radius: var(--bordo);
+    background-color: var(--tonomedio);
+    padding: 1em 1.5em;
+    color: var(--bianco);
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1em auto;
 }
 
 
