@@ -164,6 +164,7 @@ footer {
     #about {width: 50%; margin: 1.5em auto;}
     .contenitore-testo-info {flex-basis: 40%;}
     #contenitore-invert {flex-direction: row-reverse;}
+    .immagini-info {width: auto; height: 300px;}
 }
 
 
@@ -222,7 +223,7 @@ p#info-testo {
 }
 
 .contenitore-testo-info {    
-    flex-basis: 60%;
+    flex-basis: 80%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -237,4 +238,8 @@ p#info-testo2 {
     text-align: left;
     font-size: 1.2em;
     line-height: 1.5em;
+}
+
+.immagini-info {
+    width: 90%;
 }
