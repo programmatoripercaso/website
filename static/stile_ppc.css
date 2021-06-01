@@ -64,7 +64,7 @@ header {
     display: block;
     position: relative;
     top: -4.5em;
-    right: -4em;
+    right: 0;
 }
 
 .material-icons-outlined {
@@ -287,4 +287,5 @@ a#licenza-freepik {
     #contenitore-invert {flex-direction: row-reverse;}
     .immagini-info {width: auto; height: 300px; margin-top: 0;}
     #licenza-freepik {font-size: 0.8em;}
+    #cambia-css {right: -4em;}
 }

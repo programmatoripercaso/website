@@ -4,7 +4,7 @@
 :root {
     --fondochiaro: #023373;
     --tonomedio: #034AA6;
-    --contrasto: #759384;
+    --contrasto: #E84545;
     --fondoscuro: #011C40;
     --nero: #212121;
     --bianco: #e4e5e0;
@@ -55,16 +55,16 @@ header {
     border: 0px solid var(--contrasto);
     border-radius: var(--bordo);
     background-color: var(--tonomedio);
-    padding: 1em 1.5em;
+    padding: 0.5em 0.7em;
     color: var(--bianco);
     font-size: 1em;
     font-weight: 600;
     text-transform: uppercase;
-    margin: 1em 0 -4em auto;
+    margin: 1em 0 -5em auto;
     display: block;
     position: relative;
     top: -4.5em;
-    right: -4em;
+    right: 0;
 }
 
 .material-icons-outlined {
@@ -287,4 +287,5 @@ a#licenza-freepik {
     #contenitore-invert {flex-direction: row-reverse;}
     .immagini-info {width: auto; height: 300px; margin-top: 0;}
     #licenza-freepik {font-size: 0.8em;}
+    #cambia-css {right: -4em;}
 }
