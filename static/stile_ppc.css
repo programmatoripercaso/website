@@ -165,6 +165,7 @@ p.card-titolo {
 p.card-autore {
     margin: 0 auto;
     padding-bottom: 0.35em;
+    font-weight: normal;
 }
 
 footer {

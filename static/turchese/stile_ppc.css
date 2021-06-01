@@ -3,11 +3,11 @@
 
 :root {
     --fondochiaro: #023373;
-    --tonomedio: #034AA6;
+    --tonomedio: #72d6d6;
     --contrasto: #00c4c4;
     --fondoscuro: #353535;
     --nero: #212121;
-    --bianco: #e4e5e0;
+    --bianco: #fffdfa;
     
     --seserve: #05F2DB;
     
@@ -54,7 +54,7 @@ header {
 #cambia-css {
     border: 0px solid var(--contrasto);
     border-radius: var(--bordo);
-    background-color: var(--tonomedio);
+    background-color: var(--contrasto);
     padding: 0.5em 0.7em;
     color: var(--bianco);
     font-size: 1em;
@@ -152,7 +152,7 @@ hr {
     margin: 0;
     text-align: center;
     background-color: var(--tonomedio);
-    color: var(--bianco);
+    color: var(--nero);
     border-radius: 0 0 var(--bordo) var(--bordo);
 }
 
@@ -165,6 +165,7 @@ p.card-titolo {
 p.card-autore {
     margin: 0 auto;
     padding-bottom: 0.35em;
+    font-weight: normal;
 }
 
 footer {
