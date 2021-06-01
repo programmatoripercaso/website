@@ -250,12 +250,12 @@ p#info-testo2 {
     margin-top: 3em;
 }
 
-#licenza-freepik {
+a#licenza-freepik {
     font-weight: 200;
     font-style: italic;
     font-size: 0.6em;
-    text-align: center;
-    color: var(--bianco);
+    color: gray;
+    margin: 0 auto 0.5em auto;
 }
 
 
