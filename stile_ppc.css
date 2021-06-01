@@ -251,9 +251,10 @@ p#info-testo2 {
 }
 
 #licenza-freepik {
-    font-weight: 400;
+    font-weight: 200;
     font-style: italic;
-    font-size: 1em;
+    font-size: 0.6em;
+    text-align: center;
     color: var(--bianco);
 }
 
@@ -269,4 +270,5 @@ p#info-testo2 {
     .contenitore-testo-info {flex-basis: 40%;}
     #contenitore-invert {flex-direction: row-reverse;}
     .immagini-info {width: auto; height: 300px; margin-top: 0;}
+    #licenza-freepik {font-size: 0.8em;}
 }
