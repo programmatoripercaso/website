@@ -2,12 +2,20 @@ var stylesheets = [
     {
     	foglio_stile: "stile_ppc.css", 
     	logo: "Logo_Red_neg.png", 
-    	logoFooter: "Logo_Red_neg_ext.png"
+    	logoFooter: "Logo_Red_neg_ext.png",
+    	fonte: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     },
     {
     	foglio_stile: "template_stile_alternativo/stile_alternativo.css", 
     	logo: "template_stile_alternativo/Logo_Green_neg.png", 
-    	logoFooter: "template_stile_alternativo/Logo_Green_neg_ext.png"
+    	logoFooter: "template_stile_alternativo/Logo_Green_neg_ext.png",
+    	fonte: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    },
+    {
+    	foglio_stile: "brutto/stile_alternativo.css", 
+    	logo: "brutto/Logo_Green_neg.png", 
+    	logoFooter: "brutto/Logo_Green_neg_ext.png",
+    	fonte: "https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap"
     },
     // aggiungere qui sopra dopo la virgola la configurazione del nuovo stile
 ]
@@ -48,4 +56,7 @@ function actuallyChangeStylesheet(n) {
 	var logoFooter = document.getElementById("logo-footer")
 	var urlo_logoFooter = "static/" + stylesheets[n].logoFooter;
 	logoFooter.setAttribute('src', urlo_logoFooter);
+	
+	var fontStyleSheet = document.getElementById("font-primaria")
+	fontStyleSheet.setAttribute('href', stylesheets[n].fonte);
 }
