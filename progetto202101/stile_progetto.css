@@ -66,6 +66,10 @@ footer {
     align-items: center;
 }
 
+nav a {
+	margin-left: 3em;
+}
+
 #nome-progetto {
     margin-top: 0.5em;
 }
