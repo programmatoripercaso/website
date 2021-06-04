@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS specifico del progetto */
 
 :root {
     --fondochiaro: #023373;
@@ -13,6 +13,7 @@
     
     --bordo: 10px;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -51,121 +52,9 @@ header {
     padding: 5em 5%;
 }
 
-#cambia-css {
-    border: 0px solid var(--contrasto);
-    border-radius: var(--bordo);
-    background-color: var(--tonomedio);
-    padding: 0.5em 0.7em;
-    color: var(--bianco);
-    font-size: 1em;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 1em 0 -5em auto;
-    display: block;
-    position: relative;
-    top: -4.5em;
-    right: 0;
-}
-
-.material-icons-outlined {
-    font-family: 'Material Icons';
-    font-size: 100px;
-}
-
-p#about {
-    text-align: center;
-    font-size: 1.2em;
-    margin-top: 1em;
-    line-height: 1.5em;
-}
-
-#counter {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    margin: 3em auto 0;
-    justify-content: space-around;
-    align-content: space-between;
-}
-
-.counter-card {
-    margin: auto 11%;
-    padding: 1em 0;
-}
-
-.icon {
-    /* cambia il colore dell'icona > https://codepen.io/sosuke/pen/Pjoqqp */
-    filter: brightness(0) saturate(100%) invert(79%) sepia(1%) saturate(1623%) hue-rotate(49deg) brightness(128%) contrast(79%);
-    margin-bottom: 1em;
-}
-
-p.numero {
-    font-size: 2em;
-    font-weight: 600;
-    color: var(--contrasto);
-}
-
-p.caption {
-    font-size: 1.5em;
-    font-variant: small-caps;
-}
-
 main {
     text-align: center;
     margin: 3em auto;
-}
-
-.anno {
-    color: var(--nero);
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 2em 2em 0 2em;
-    width: 90%;
-    justify-content: space-around;
-}
-
-hr {
-    width: 50%;
-    border-style: solid;
-    color: var(--contrasto);
-    height: 1px;
-    margin-bottom: 3.75em;
-}
-
-.card {
-    width: 200px;
-    margin: 20px 0;
-    padding: 0;    
-    background-color: var(--tonomedio);
-    border-radius: var(--bordo);
-}
-
-.card>img {
-    margin: 0;
-    padding: 0;
-    border-radius: var(--bordo) var(--bordo) 0 0;
-}
-
-.card-testo {
-    padding: 1em auto;
-    margin: 0;
-    text-align: center;
-    background-color: var(--tonomedio);
-    color: var(--bianco);
-    border-radius: 0 0 var(--bordo) var(--bordo);
-}
-
-p.card-titolo {
-    margin: 0 auto;
-    padding-top: 0.05em;
-    font-weight: bold;
-}
-
-p.card-autore {
-    margin: 0 auto;
-    padding-bottom: 0.35em;
-    font-weight: normal;
 }
 
 footer {
@@ -177,9 +66,6 @@ footer {
     align-items: center;
 }
 
-
-
-/*pagina interna progetto*/
 #nome-progetto {
     margin-top: 0.5em;
 }
@@ -226,67 +112,9 @@ p#testo-interno {
     font-weight: 600;
     text-transform: uppercase;
     margin: 1em auto;
+    cursor: pointer;
 }
-
-
-/*pagina info*/
-p#info-testo {
-    text-align: left;
-    font-size: 1.2em;
-    line-height: 1.5em;
-}
-
-.contenitore {    
-    margin: 3em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.contenitore-testo-info {    
-    flex-basis: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.titolo-info {
-    text-align: left;
-    margin: 0;
-}
-
-p#info-testo2 {
-    text-align: left;
-    font-size: 1.2em;
-    line-height: 1.5em;
-}
-
-.immagini-info {
-    width: 100%;
-    margin-top: 3em;
-}
-
-a#licenza-freepik {
-    font-weight: 200;
-    font-style: italic;
-    font-size: 0.6em;
-    color: gray;
-    margin: 0 auto 0.5em auto;
-}
-
-
-
-
-
-
 
 @media screen and (min-width: 800px) {
     h1 {font-size: 3em;}
-    #about {width: 50%; margin: 1.5em auto;}
-    .contenitore-testo-info {flex-basis: 40%;}
-    #contenitore-invert {flex-direction: row-reverse;}
-    .immagini-info {width: auto; height: 300px; margin-top: 0;}
-    #licenza-freepik {font-size: 0.8em;}
-    #cambia-css {right: -4em;}
 }

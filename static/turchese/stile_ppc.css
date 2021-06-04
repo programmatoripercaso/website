@@ -9,8 +9,6 @@
     --nero: #212121;
     --bianco: #fffdfa;
     
-    --seserve: #05F2DB;
-    
     --bordo: 10px;
 }
 * {
@@ -176,58 +174,6 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-
-
-
-/*pagina interna progetto*/
-#nome-progetto {
-    margin-top: 0.5em;
-}
-
-p#about-interno {    
-    text-align: center;
-    font-size: 1.2em;
-    margin: 1em auto;
-    line-height: 1.5em;
-}
-
-h2 {
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size:1.5em;
-    margin-bottom: 25px;
-}
-
-.mockup>img {
-    width: 200px;
-    margin: 20px;
-    border-radius: var(--bordo);
-}
-
-.riga {
-    margin: 20px auto;
-}
-
-p#testo-interno {
-    max-width: 60%;
-    text-align: center;
-    font-size: 1.2em;
-    margin: 1em auto 0 auto;
-    line-height: 1.5em;
-}
-
-#link-progetto {
-    border: 0px solid var(--contrasto);
-    border-radius: var(--bordo);
-    background-color: var(--tonomedio);
-    padding: 1em 1.5em;
-    color: var(--bianco);
-    font-size: 1em;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 1em auto;
-}
-
 
 /*pagina info*/
 p#info-testo {
