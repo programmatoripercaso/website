@@ -1,6 +1,15 @@
 var stylesheets = [
-    {foglio_stile: "stile_ppc.css", logo: "Logo_Red_neg.png", logoFooter: "Logo_Red_neg_ext.png"},
-    {foglio_stile: "turchese/stile_ppc.css", logo: "turchese/Logo_Green_neg.png", logoFooter: "turchese/Logo_Green_neg_ext.png"},
+    {
+    	foglio_stile: "stile_ppc.css", 
+    	logo: "Logo_Red_neg.png", 
+    	logoFooter: "Logo_Red_neg_ext.png"
+    },
+    {
+    	foglio_stile: "template_stile_alternativo/stile_alternativo.css", 
+    	logo: "template_stile_alternativo/Logo_Green_neg.png", 
+    	logoFooter: "template_stile_alternativo/Logo_Green_neg_ext.png"
+    },
+    // aggiungere qui sopra dopo la virgola la configurazione del nuovo stile
 ]
 
 function changeStyleSheet(){
@@ -8,10 +17,8 @@ function changeStyleSheet(){
 	if (old_n == null) {
 		old_n = 0;
 	}
-	console.log('old_n: ', old_n)
 	do {
 		n = Math.floor(Math.random() * stylesheets.length);    
-		console.log('n: ', n)
 	} while(n == old_n);
 	localStorage.setItem("stile_selezionato", n);
 	actuallyChangeStylesheet(n);
