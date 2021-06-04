@@ -29,6 +29,7 @@ function quandoSiCaricaLaPagina() {
 }
 
 function actuallyChangeStylesheet(n) {
+	console.log('stile cambiato in ', n)
 	var stylesheet = document.getElementById("stylesheet");    
 	let urlo_stylesheet = "static/" + stylesheets[n].foglio_stile;
 	stylesheet.setAttribute('href', urlo_stylesheet);
