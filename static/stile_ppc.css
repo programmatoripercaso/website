@@ -65,6 +65,7 @@ header {
     position: relative;
     top: -4.5em;
     right: 0;
+    cursor: pointer;
 }
 
 .material-icons-outlined {
