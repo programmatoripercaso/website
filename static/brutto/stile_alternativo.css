@@ -5,7 +5,8 @@
     --fondochiaro: #f87004;
     --tonomedio: #ae3e07;
     --contrasto: #f4282b;
-    --fondoscuro: #540405;
+    --fondoscuro: #660406;
+    --fondoscurobottom: #440304;
     --nero: #360203;
     --bianco: #fdeed3;
     
@@ -19,7 +20,7 @@ body {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 1.3em;
     margin: 0;
-    background: var(--bianco);
+	background: var(--bianco);
 }
 
 h1 {
@@ -47,14 +48,14 @@ a {
 header {
     text-align: center;
     color: var(--bianco);
-    background-color: var(--fondoscuro);
-    padding: 5em 5%;
+    background: linear-gradient(to top, var(--fondoscuro), var(--fondoscurobottom));
+    padding: 3em 1%;
 }
 
 #cambia-css {
-    border: 0px solid var(--contrasto);
+    border: 0px solid var(--tonomedio);
     border-radius: var(--bordo);
-    background-color: var(--contrasto);
+    background-color: var(--tonomedio);
     padding: 0.5em 0.7em;
     color: var(--bianco);
     font-size: 1em;
@@ -62,9 +63,6 @@ header {
     text-transform: uppercase;
     margin: 1em 0 -5em auto;
     display: block;
-    position: relative;
-    top: -4.5em;
-    right: 0;
     cursor: pointer;
 }
 
@@ -94,18 +92,8 @@ p#about {
     padding: 1em 0;
 }
 
-#logo {
+#logo, #logotitolo, #logo-footer, .icon {
 	filter: brightness(0) saturate(100%) invert(77%) sepia(79%) saturate(2288%) hue-rotate(327deg) brightness(100%) contrast(98%);
-}
-
-#logo-titolo {
-	filter: brightness(0) saturate(100%) invert(77%) sepia(79%) saturate(2288%) hue-rotate(327deg) brightness(100%) contrast(98%);
-}
-
-.icon {
-    /* cambia il colore dell'icona > https://codepen.io/sosuke/pen/Pjoqqp */
-    filter: brightness(0) saturate(100%) invert(77%) sepia(79%) saturate(2288%) hue-rotate(327deg) brightness(100%) contrast(98%);
-    margin-bottom: 1em;
 }
 
 p.numero {
@@ -146,7 +134,7 @@ hr {
     width: 200px;
     margin: 20px 0;
     padding: 0;    
-    background-color: var(--tonomedio);
+    background: linear-gradient(to top, var(--fondoscuro), var(--fondoscurobottom));
     border-radius: var(--bordo);
 }
 
@@ -160,7 +148,6 @@ hr {
     padding: 1em auto;
     margin: 0;
     text-align: center;
-    background-color: var(--tonomedio);
     color: var(--bianco);
     border-radius: 0 0 var(--bordo) var(--bordo);
 }
@@ -222,6 +209,7 @@ p#info-testo2 {
 .immagini-info {
     width: 100%;
     margin-top: 3em;
+    mix-blend-mode: multiply;
 }
 
 a#licenza-freepik {
@@ -235,12 +223,9 @@ a#licenza-freepik {
 
 
 
-
-
-
 @media screen and (min-width: 800px) {
     h1 {font-size: 3em;}
-    #about {width: 50%; margin: 1.5em auto;}
+    #about {width: 70%; margin: 1.5em auto;}
     .contenitore-testo-info {flex-basis: 40%;}
     #contenitore-invert {flex-direction: row-reverse;}
     .immagini-info {width: auto; height: 300px; margin-top: 0;}
