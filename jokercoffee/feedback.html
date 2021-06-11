@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/logo.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>feedback</title>
+    <style>
+        main {
+            max-width: 1024px;
+            margin: 40px auto;
+            height: 1000px;
+            background-color: white;
+            box-shadow: 0 4px 8px gray;
+        }
+
+        div.tital {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 180px;
+        }
+
+        button {
+            text-align: center;
+            margin: 0 auto;
+            border: none;
+            background-color: transparent;
+            display: block;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="item">
+            <a href="./index.html"><img class="one" src="img/logo.png" width="45px" margin-left="40px" /></a>
+        </div>
+        <div class="menuitem">
+            <div class="item">Menu</div>
+            <div class="subItemContainer">
+                <div class="item subItem"><a href="./drinks.html">Drinks</a></div>
+                <div class="item subItem"><a href="./food.html">Food</a></div>
+            </div>
+        </div>
+        <div class="item subItem"><a href="./merchandise.html">Merchandise</a></div>
+        <div class="item subItem"><a href="./story.html">Coffee Story</a></div>
+        <div class="space"></div>
+        <div class="item subItem">
+            <a href="./map.html"><img src="img/position.png" alt="map" width="20px" />Find Shop</a>
+        </div>
+        <div class="item">
+            <a href="./feedback.html"><img class="two" src="img/feedback.png" alt="feedback" width="40px" /></a>
+        </div>
+    </nav>
+    <main>
+        <div class="tital">
+            <img src="img/logo.png" alt="logo" width="60px" />
+            <h1>Feedback</h1>
+        </div>
+        <div style="width: 100%">
+            <form id="form" action="#" method="POST" autocomplete="off" style="margin: 0 auto; width: 800px">
+                <fieldset>
+                    <label for="age">Age:
+                        <input type="number" name="number" min="5" max="100" value="18" /> </label><br /><br />
+                    <legend>basic information</legend>
+                    <label for="Gender">Gender:
+                        <select name="sex" id="sex">
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </select> </label><br /><br />
+                    <label for="name">Name:
+                        <input type="text" name="name" id="name" autofocus required /> </label><br /><br />
+                    <label for="date">Birthday:
+                        <input type="date" name="date" id="date" required /> </label><br /><br />
+                    <label for="email">e-mail:
+                        <input type="text" name="email" id="email" placeholder="@.gmail" required />
+                    </label><br /><br />
+                </fieldset>
+                <p>
+                    <img src="img/heart.png" alt="heart" width="10px" /> In order to
+                    achieve better service, please take a few minutes to provide us with
+                    valuable feedback.<img src="img/heart.png" alt="heart" width="10px" />
+                </p>
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <label for="box">Which product do you prefer?<br />
+                        <input type="checkbox" name="product[]" value="coffee" />Coffee
+                        <input type="checkbox" name="product[]" value="tea" />Tea
+                        <input type="checkbox" name="product[]" value="food" />Food
+                        <input type="checkbox" name="product[]" value="merchandise" />Merchandise </label><br /><br />
+                    <label for="write">Feedback:</label><br />
+                    <textarea name="write" id="write" cols="50" rows="10">
+"please write your problem or advice here." </textarea>
+                    <br /><br />
+                </fieldset>
+                <br /><br />
+            </form>
+            <div>
+                <button onclick="formSubmit()" type="submit" >
+                    <img src="img/submit.png" alt="submit" width="100px" />
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="content">Joker Coffee © 2021 Bingbinaki</div>
+    </footer>
+</body>
+<script>
+    function formSubmit() {
+        var name = document.getElementById('name').value
+        var date = document.getElementById('date').value
+        var email = document.getElementById('email').value
+        if (!name) {
+            alert('name cannot be empty')
+            return
+        }
+        if (!date) {
+            alert('date cannot be empty')
+            return
+        }
+        if (!email) {
+            alert('date cannot be empty')
+            return
+        }
+
+        window.location.href = './index.html'
+    }
+</script>
+
+</html>

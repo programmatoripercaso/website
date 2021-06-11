@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>Find Shop</title>
+    <style>
+        .on{
+            border-bottom:goldenrod solid 10px ;
+        }
+
+        main {
+            height: 1000px;
+            background-color: whitesmoke;
+            position: relative;
+        }
+
+        .tital img{
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+
+        div.tital{
+            display: flex;
+            margin: 0;
+            align-items: center;
+        }
+
+        .container{
+            width: 70%;
+            position: absolute;
+            top: 50px;
+            left: 150px;
+        }
+
+        iframe{
+            border: gray double 2px;
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+        .contact p{
+            font-size: large;
+            font-weight: 700;
+        }
+
+        .contact p a:hover{
+            color: goldenrod;
+        }
+
+        .contact p :link{
+            color: blueviolet;
+        }
+
+        .contact p a:active{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="item">
+            <a href="./index.html"><img class="one" src="img/logo.png" width="45px" margin-left="40px" /></a>
+        </div>
+        <div class="menuitem">
+            <div class="item">Menu</div>
+            <div class="subItemContainer">
+                <div class="item subItem"><a href="./drinks.html">Drinks</a></div>
+                <div class="item subItem"><a href="./food.html">Food</a></div>
+            </div>
+        </div>
+        <div class="item subItem"><a href="./merchandise.html">Merchandise</a></div>
+        <div class="item subItem"><a href="./story.html">Coffee Story</a></div>
+        <div class="space"></div>
+        <div class="item subItem on">
+            <a href="./map.html"><img src="img/position.png" alt="map" width="20px" />Find Shop</a>
+        </div>
+        <div class="item">
+            <a href="./feedback.html"><img class="two" src="img/feedback.png" alt="feedback" width="40px" /></a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="tital">
+                <img src="img/position.png" alt="address" >
+                <h2>China Shenzhen HaiyunPark B-103</h2>
+            </div>    
+            <iframe src="https://map.baidu.com/@12685594.564916838,2559229.879210665,13.79z" width="800px" height="600px" frameborder="2">OPPS~SORRY!</iframe>
+            <div class="contact">
+                <p>tel:<a href="tel:3336905796" target="_blank">3336666999</a></p>
+                <p>e-mail:<a href="mailto:lbb289778998@gmail.com" target="_blank">Jokercoffee@gmail.com</a></p>
+                <p>facebook:<a href="https://www.facebook.com/profile.php?id=100022988922537" target="_blank">Jokercoffee</a> </p>
+            </div>
+        </div>    
+    </main>
+    <footer>
+        <div class="content">Joker Coffee © 2021 Bingbinaki</div>
+    </footer>
+</body>
+</html>

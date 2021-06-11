@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/logo.ico" />
+    <link rel="stylesheet" href="storystyles.css" />
+    <title>Coffee Story</title>
+    <style>
+      .on {
+        border-bottom: goldenrod solid 10px;
+      }
+      .page {
+        width: 1024px;
+        height: 850px;
+        background-color: white;
+        margin: 500px auto 50px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .page img {
+        width: 600px;
+        margin: 50px auto 0px;
+        display: block;
+        box-shadow: 0 4px 8px grey;
+        transition: 1s;
+      }
+      .page img:hover {
+        transform: translateX(-30px);
+      }
+      #searchContainer {
+        height: 50px;
+        transition-duration: 1s;
+        transition-property: right, left;
+        z-index: 999;
+        position: absolute;
+        top: 70px;
+        left: 13%;
+        right: 13%;
+      }
+      .searchContainerFixed {
+        position: fixed !important;
+        left: 20px !important;
+        right: 20px !important;
+        margin-top: 0px !important;
+
+        margin-left: 0px !important;
+        top: 0px !important;
+      }
+      .searchBar {
+        height: 100%;
+        position: relative;
+      }
+      .searchBar input {
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        height: 100%;
+        outline: none;
+      }
+      .searchContent {
+        width: 100%;
+        top: 20px;
+        position: absolute;
+        top: 60px;
+        padding: 0px 40px;
+        max-height: 180px;
+        overflow-y: auto;
+        box-sizing: border-box;
+      }
+      .searchContentItem {
+        height: 50px;
+        background-color: #ededed;
+        border-bottom: 1px solid #ccc;
+        line-height: 50px;
+        padding-left: 40px;
+      }
+      .searchContentItem a {
+        text-decoration: none;
+        color: #999;
+      }
+      .searchBarTop {
+        margin: 0px -20px;
+        background-color: #fff;
+      }
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 70px;
+        background-color: #ccc;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="item">
+        <a href="./index.html"
+          ><img class="one" src="img/logo.png" width="45px" margin-left="40px"
+        /></a>
+      </div>
+      <div class="menuitem">
+        <div class="item">Menu</div>
+        <div class="subItemContainer">
+          <div class="item subItem"><a href="./drinks.html">Drinks</a></div>
+          <div class="item subItem"><a href="./food.html">Food</a></div>
+        </div>
+      </div>
+      <div class="item subItem">
+        <a href="./merchandise.html">Merchandise</a>
+      </div>
+      <div class="item subItem on"><a href="./story.html">Coffee Story</a></div>
+      <div class="space"></div>
+      <div class="item subItem">
+        <a href="./map.html"
+          ><img src="img/position.png" alt="map" width="20px" />Find Shop</a
+        >
+      </div>
+      <div class="item">
+        <a href="./feedback.html"
+          ><img class="two" src="img/feedback.png" alt="feedback" width="40px"
+        /></a>
+      </div>
+    </nav>
+    <main>
+      <div id="searchContainer">
+        <div class="searchBar searchBarTop" style="display: flex">
+          <div class="icon">
+            <img
+              src="./img//search.jpg"
+              id="searchIcon"
+              style="height: 30px"
+              alt=""
+            />
+          </div>
+          <div
+            style="
+              display: flex;
+              flex: 1;
+              justify-content: center;
+              height: 100%;
+            "
+          >
+            <a href=""
+              ><img
+                src="./img/searchLogo.jpg"
+                id="searchIcon"
+                style="height: 50px"
+                alt=""
+            /></a>
+          </div>
+
+          <div class="icon">
+            <img src="./img/heart.png" style="height: 30px" alt="" />
+          </div>
+        </div>
+        <div
+          class="searchBar"
+          style="margin-top: 10px; display: none"
+          id="inputDiv"
+        >
+          <div style="height: 100%">
+            <input
+              type="text"
+              id="input"
+              placeholder="input here"
+              style="padding-left: 40px; line-height: 50px"
+              autofocus
+            />
+          </div>
+          <div class="searchContent" id="searchContent"></div>
+        </div>
+      </div>
+      <div class="page">
+        <a href="./roaststory.html" target="_blank"
+          ><img src="img/a3.png" alt="article1"
+        /></a>
+        <a href="./coffeehistory.html" target="_blank"
+          ><img src="img/a2.png" alt="article2"
+        /></a>
+        <a href="./icecoffee.html" target="_blank"
+          ><img src="img/a1.png" alt="article3"
+        /></a>
+      </div>
+    </main>
+    <footer>
+      <div class="content">Joker Coffee © 2021 Bingbinaki</div>
+    </footer>
+  </body>
+  <script>
+    window.onscroll = function () {
+      var scrollTop =
+        document.documentElement.scrollTop || document.body.scrollTop
+      var element = document.getElementById('searchContainer')
+      if (scrollTop >= 70) {
+        element.classList.add('searchContainerFixed')
+      } else {
+        element.classList.remove('searchContainerFixed')
+      }
+    }
+    var keywords = [
+      {
+        name: 'ice coffee',
+        href: './icecoffee.html',
+      },
+      {
+        name: 'ice',
+        href: './icecoffee.html',
+      },
+      {
+        name: 'history',
+        href: './coffeehistory.html',
+      },
+      {
+        name: 'grind',
+        href: './coffeehistory.html',
+      },
+      {
+        name: 'plant',
+        href: './coffeehistory.html',
+      },
+      {
+        name: 'aftica',
+        href: './coffeehistory.html',
+      },
+      {
+        name: 'magic bean',
+        href: './coffeehistory.html',
+      },
+      {
+        name: 'Muslim',
+        href: './coffeehistory.html',
+      },
+      {
+        name: 'india',
+        href: './coffeehistory.html',
+      },
+      {
+        name: 'Arabic',
+        href: './coffeehistory.html',
+      },
+      {
+        name: 'roast',
+        href: './roaststory.html',
+      },
+      {
+        name: 'flavor',
+        href: './roaststory.html',
+      },
+      {
+        name: 'tast',
+        href: './roaststory.html',
+      },
+      {
+        name: 'color',
+        href: './roaststory.html',
+      },
+      {
+        name: 'pop',
+        href: './roaststory.html',
+      },
+      {
+        name: 'coffee',
+        href: './icecoffee.html',
+      },
+      {
+        name: 'water',
+        href: './icecoffee.html',
+      },
+    ]
+    var input = document.getElementById('input')
+    var searchContent = document.getElementById('searchContent')
+    // 是否包含关键字
+    input.oninput = function (params) {
+      var items = []
+      if (!input.value) {
+        items = []
+        searchContent.innerHTML = ''
+        return
+      }
+      keywords.forEach((element) => {
+        if (element.name.includes(input.value)) {
+          items.push(element)
+          searchContent.innerHTML = ''
+          // 显示在页面上
+          items.forEach((searchContentItem) => {
+            var item = document.createElement('div')
+            var item_a = document.createElement('a')
+            item_a.text = searchContentItem.name
+            item_a.href = searchContentItem.href
+            item.appendChild(item_a)
+            item.classList.add('searchContentItem')
+            searchContent.appendChild(item)
+          })
+        }
+      })
+    }
+    var searchIcon = document.getElementById('searchIcon')
+    var showSearch = false
+    searchIcon.onclick = function (params) {
+      showSearch = !showSearch
+      searchContent.innerHTML = ''
+      input.value = ''
+      if (showSearch) {
+        document.getElementById('inputDiv').style.display = 'block'
+
+        document.getElementById('searchIcon').src = './img/cancel.png'
+      } else {
+        document.getElementById('inputDiv').style.display = 'none'
+        document.getElementById('searchIcon').src = './img/search.jpg'
+      }
+    }
+  </script>
+</html>
