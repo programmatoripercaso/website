@@ -141,6 +141,7 @@ hr {
 }
 
 .card>img {
+    width: 100%;
     margin: 0;
     padding: 0;
     border-radius: var(--bordo) var(--bordo) 0 0;

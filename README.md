@@ -9,6 +9,6 @@ Il sito è una vetrina dei progetti fatti dagli allievi, con una parte generale 
 Buona parte del sito è volutamente non firmata, perché è un progetto collettivo, non personale. 
 Le uniche parti firmate sono i progetti.
 
-Tutto il progetto è solo incidentalmente sell'Accademia di Belle Arti di Napoli. Il progetto e il sito sono fondamentalmente
+Tutto il progetto è solo incidentalmente dell'Accademia di Belle Arti di Napoli. Il progetto e il sito sono fondamentalmente
 personali e non parte del progetto accademico e della scuola (anche se amano pensarsi esistere a partire di esso). Non c'è nessun
 _endorsement_ accademico, né esso è stato cercato. È un _gioco_, in cui lo scopo primario è cercare di divertirci e creare.
