@@ -1,0 +1,260 @@
+.container{
+    width:1906px;
+    height: 745px;
+}
+.header{
+    background-color: #0099cc;
+    color: rgb(247, 241, 241);
+    padding: 15px;
+    border-bottom: blue solid 0px;
+    height:125px;
+}
+.header h1{
+    position: relative;
+    text-align: center;
+    top: 20px;
+}
+.box{
+    margin: 0px;
+    
+}
+.box1{
+    background-color: rgb(193, 201, 201);
+    width: 227px;
+    height: auto;
+    float: left;
+    border-top:solid royalblue 0px;
+}
+.box1 h1{
+    font-size: 18pt;
+    text-align: left;
+    margin-top: 2px;
+    color: rgb(50, 50, 173);
+   float: left;
+
+}
+.box2 {
+    background-color: rgb(241, 241, 226);
+    width: 1906px;
+    height:745px;
+    border-top: royalblue solid 0px;
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    margin: 0px;
+    height: 50px;
+    
+   
+  }
+  .footer p{
+      position: relative;
+      bottom: -4px;
+      height: 50px;
+  }
+
+nav {
+    float: left;
+    width: 7em;
+    background: #FDD;
+}
+
+nav ul {
+     margin: 0;
+     padding: 0;
+     width: 7em;
+     background: white;
+     border: 1px solid;
+}
+
+nav li {
+     position: relative;
+     list-style: none;
+     margin: 0;
+     border-bottom: 1px solid #CCC;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 0;
+    left: 7em;
+    display: none;
+}
+
+nav li a {
+    display: block;
+    padding: 0.25em 0 0.25em 0.5em;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background: #6F99F2;
+}
+
+nav li.submenu {
+    background: url(http://interactivepython.org/runestone/static/webfundamentals/_static/submenu.gif) 95% 50% no-repeat;
+}
+
+nav li.submenu:hover {
+    background-color: #EDD;
+}
+
+
+
+nav ul.level1 li.submenu:hover ul.level2,
+nav ul.level2 li.submenu:hover ul.level3 {
+    display:block;
+}
+nav{
+    margin-left:0px;
+}
+img{
+    height: 500px;
+    width: auto;
+    position: relative;
+    top: 50px;
+    left: 120px;
+}
+#pics img{
+    width: 300px;
+    height: 300px;
+    left: 120px;
+    top: 0px;
+
+}
+body{
+    margin: 0px;
+}
+.foto img{
+   width: 300px;
+   height: 300px;
+   left: 600px;
+   top: -305px;
+}
+.text{
+    position: relative;
+    right: -1500px;
+    top: -485px;
+   
+
+}
+.text p{
+    position: relative;
+    width: 350px;
+   
+}
+.foto1 img{
+    position: relative;
+    width: 1040px;
+    left: 347px;
+    top: -870px;
+    height: 385px;
+   
+}
+
+
+.search-box{
+    position: absolute;
+    top:80px;
+    right:0px;
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-box:hover>.search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box:hover>.search-btn{
+   background: white;
+}
+.search-btn{
+    color: #e84118;
+    float:right ;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+.box1 p{
+    height: 270px;
+   text-decoration: #6F99F2;
+}
+.header .navv a.index{
+    background-color: tomato;
+   
+}
+.header .navv a{
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    padding: 5px; 
+}
+.header .navv a:hover{
+    background-color: tomato;
+   
+}
+.header .gg a.pp:hover{
+    background-color: rgb(248, 245, 245);
+
+}
+.gg{
+    position: relative;
+   top: -95px;
+   color: rgb(22, 22, 6);
+   left: 0px;
+  
+
+}
+.header .gg a.pp{
+   text-decoration: none;
+
+}
+.foto{
+    height: 500px;
+}
+.foto2{
+    position: relative;
+    left: -60px;
+}
+.foto3{
+    position: relative;
+    left: 600px;
+    top: -304px;
+}
+.foto4{
+    position: relative;
+    left: 1015px;
+    top: -606px;
+}
+.logo img{
+    width:50px;
+    height:50px;
+    top: -95px;
+    left: 800px;
+    
+}
+   
+
+
+  
