@@ -2,22 +2,23 @@
     width: 1920px;
     height: auto;
 }
-.header .navv a.Profilo{
+.header .navv a.Profilo{position: relative;
     background-color: tomato;
+    top: -30px;
 }
 .box{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/45.jpg);
-    background-color: tomato;
+    
+    background-color: rgb(247, 157, 141);
    
   
 }
 
 .main-content{
     text-align: center;
-    box-shadow: 0 0 10px #00000070;
+    box-shadow: 0 0 0px #00000070;
 }
 .top-section img{
     position: relative;
@@ -89,4 +90,46 @@
     background-color: #d3dae2;
     margin-left: 50px;
     margin-right: 40px;
+}
+.gg{
+    position: relative;
+    float: right;
+    top: -90px;
+}
+.icone img{
+    float: left;
+    width: 40px;
+    height:30px;
+    margin-left: -100px;
+    margin-top: -45px;
+
+
+}
+.footer{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: #0099cc;
+    text-align: center;
+    top: -20px;
+    
+
+}
+.footer p{
+    position: relative;
+   top: 10px;
+    
+
+}
+.sfondo{
+    position: relative;
+    height: 220px;
+    background-color: rgb(241, 241, 226);
+    text-align: center;
+    top: -20px;
+    overflow: hidden;
+}
+.p1{
+  width: 400px;
+  text-align: justify;
 }
