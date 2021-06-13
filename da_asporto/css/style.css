@@ -1,10 +1,8 @@
-.container{
-    width:1906px;
-    height: 745px;
-}
+
+
 .header{
-    background-color: #0099cc;
-    color: rgb(247, 241, 241);
+    background-color: #36B4D8;
+    color: white;
     padding: 15px;
     border-bottom: blue solid 0px;
     height:125px;
@@ -12,61 +10,68 @@
 .header h1{
     position: relative;
     text-align: center;
-    top: 20px;
+    top: 25px;
 }
 .box{
     margin: 0px;
     
 }
 .box1{
-    background-color: rgb(193, 201, 201);
+    position: relative;
+    
     width: 227px;
-    height: auto;
+    height: 810px;
     float: left;
     border-top:solid royalblue 0px;
+    left: 15px;
+    background-color:#FFFF00;
 }
 .box1 h1{
+    
     font-size: 18pt;
     text-align: left;
     margin-top: 2px;
-    color: rgb(50, 50, 173);
-   float: left;
-
+    color: #36B4D8;
 }
+.box1 p{
+    font-size: 0.5cm;
+}
+
 .box2 {
-    background-color: rgb(241, 241, 226);
-    width: 1906px;
-    height:745px;
+    background-color: #F6FCC0;
+ 
     border-top: royalblue solid 0px;
 }
-.footer {
-    background-color: #0099cc;
+#footer {
+    width: auto;
+    background-color: #36B4D8;
     color: #ffffff;
     text-align: center;
     font-size: 12px;
     padding: 15px;
     margin: 0px;
-    height: 50px;
-    
+    height: 50px; 
+  }
+  #footer h3{
+      position: relative;
+      top: 0px;
    
   }
-  .footer p{
-      position: relative;
-      bottom: -4px;
-      height: 50px;
-  }
 
-nav {
+
+  nav {
+      position: relative;
     float: left;
     width: 7em;
     background: #FDD;
+  
 }
 
 nav ul {
      margin: 0;
      padding: 0;
      width: 7em;
-     background: white;
+     background: #f7f7ec;
      border: 1px solid;
 }
 
@@ -129,21 +134,15 @@ body{
     margin: 0px;
 }
 .foto img{
-   width: 300px;
-   height: 300px;
-   left: 600px;
-   top: -305px;
-}
-.text{
-    position: relative;
-    right: -1500px;
-    top: -485px;
-   
-
+  top: 0px;
+  height: 485px;
+  left: 230px;
+  width: 920px;
 }
 .text p{
     position: relative;
-    width: 350px;
+    width: 315px;
+    
    
 }
 .foto1 img{
@@ -197,11 +196,14 @@ body{
     width: 0px;
 }
 .box1 p{
+    
     height: 270px;
    text-decoration: #6F99F2;
+  
 }
 .header .navv a.index{
     background-color: tomato;
+    
    
 }
 .header .navv a{
@@ -220,7 +222,7 @@ body{
 }
 .gg{
     position: relative;
-   top: -95px;
+   top: -50px;
    color: rgb(22, 22, 6);
    left: 0px;
   
@@ -254,6 +256,78 @@ body{
     left: 800px;
     
 }
+.text h1{
+   position: relative;
+   top: -20px;
+}
+.p1{
+    position: relative;
+   
+     top: -20px;
+ } 
+ .text1{
+     position: relative;
+     top: 15px;
+
+ }
+ .text1 h2{
+    position: relative;
+    top: 100px;
+ }
+ .text1 .p2{
+    position: relative;
+    top: 100px;
+ }
+ .box3{
+     width: 100%;
+     height: 310px;
+     background-color: #F6FCC0;
+    
+    
+ }
+ .box3 div{
+     width: 198px;
+     border: 1px gray;
+     float: left;
+     margin-left:25px;
+
+ }
+ .box3 div img{
+   position: relative;
+   height: 230px;
+   width: 230px;
+   top: 80px;
+   float: left;
+ 
+
+}
+.box3 .f1 img{
+    position: relative;
+    left: -12px;
+}
+.box3 .f4 img{
+    position: relative;
+    left:450px;  
+}
+.box3 .f3 img{
+    position: relative;
+    left:331px;  
+}
+.box3 .f2 img{
+    position: relative;
+    left:210px;  
+}
+.tesi{
+    float: right;
+    width: 313px;
+}
+.tesi p{
+   font-size: 0.5cm;
+}
+.tesi h1{
+    color: #36B4D8;
+}
+
    
 
 
