@@ -19,26 +19,34 @@
 .box1{
     position: relative;
     
-    width: 227px;
+    width: 305px;
     height: 810px;
     float: left;
     border-top:solid royalblue 0px;
-    left: 15px;
+    left: 0px;
     background-color:#FFFF00;
+    overflow: hidden;
 }
 .box1 h1{
     
-    font-size: 18pt;
+    font-size: 20pt;
     text-align: left;
     margin-top: 2px;
     color: #36B4D8;
+    margin-left: 15px;
 }
 .box1 p{
     font-size: 0.5cm;
+    margin-left: 15px;
+    width: 280px;
+   
 }
 
 .box2 {
     background-color: #F6FCC0;
+    position: relative;
+    overflow: hidden;
+    height: 810px;
  
     border-top: royalblue solid 0px;
 }
@@ -64,6 +72,7 @@
     float: left;
     width: 7em;
     background: #FDD;
+    left: 15px;
   
 }
 
@@ -134,10 +143,12 @@ body{
     margin: 0px;
 }
 .foto img{
-  top: 0px;
-  height: 485px;
-  left: 230px;
-  width: 920px;
+ width: 915px;
+ position: absolute;
+ left: 50%;
+ margin-left: -600px;
+ margin-top: -50px;
+  
 }
 .text p{
     position: relative;
@@ -279,9 +290,11 @@ body{
     top: 100px;
  }
  .box3{
+     
      width: 100%;
      height: 310px;
      background-color: #F6FCC0;
+     overflow: hidden;
     
     
  }
@@ -293,39 +306,60 @@ body{
 
  }
  .box3 div img{
-   position: relative;
+   position:relative;
    height: 230px;
    width: 230px;
    top: 80px;
-   float: left;
- 
+   
 
 }
-.box3 .f1 img{
-    position: relative;
-    left: -12px;
-}
+
 .box3 .f4 img{
     position: relative;
-    left:450px;  
+    left:414px;  
 }
 .box3 .f3 img{
     position: relative;
-    left:331px;  
+    left:295px;  
 }
 .box3 .f2 img{
     position: relative;
-    left:210px;  
+    left:174px;  
 }
 .tesi{
-    float: right;
-    width: 313px;
+   position: relative;
+    left: 82.5%;
+    width:290px;
+    top: -15px;
 }
 .tesi p{
    font-size: 0.5cm;
+  
 }
 .tesi h1{
     color: #36B4D8;
+    font-size: 1.7em;
+}
+.box3{
+    display: none;
+}
+@media(min-width:1640px){
+    .box3{
+        display: block;
+
+    }
+
+}
+
+.tesi{
+    display: none;
+}
+@media(min-width:1276px){
+    .tesi{
+        display: block;
+
+    }
+
 }
 
    
