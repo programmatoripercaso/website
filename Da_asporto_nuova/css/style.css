@@ -1,0 +1,334 @@
+
+
+.header{
+    background-color: #36B4D8;
+    color: white;
+    padding: 15px;
+    border-bottom: blue solid 0px;
+    height:125px;
+}
+.header h1{
+    position: relative;
+    text-align: center;
+    top: 25px;
+}
+.box{
+    margin: 0px;
+    
+}
+.box1{
+    position: relative;
+    
+    width: 227px;
+    height: 810px;
+    float: left;
+    border-top:solid royalblue 0px;
+    left: 15px;
+    background-color:#FFFF00;
+}
+.box1 h1{
+    
+    font-size: 18pt;
+    text-align: left;
+    margin-top: 2px;
+    color: #36B4D8;
+}
+.box1 p{
+    font-size: 0.5cm;
+}
+
+.box2 {
+    background-color: #F6FCC0;
+ 
+    border-top: royalblue solid 0px;
+}
+#footer {
+    width: auto;
+    background-color: #36B4D8;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    margin: 0px;
+    height: 50px; 
+  }
+  #footer h3{
+      position: relative;
+      top: 0px;
+   
+  }
+
+
+  nav {
+      position: relative;
+    float: left;
+    width: 7em;
+    background: #FDD;
+  
+}
+
+nav ul {
+     margin: 0;
+     padding: 0;
+     width: 7em;
+     background: #f7f7ec;
+     border: 1px solid;
+}
+
+nav li {
+     position: relative;
+     list-style: none;
+     margin: 0;
+     border-bottom: 1px solid #CCC;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 0;
+    left: 7em;
+    display: none;
+}
+
+nav li a {
+    display: block;
+    padding: 0.25em 0 0.25em 0.5em;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background: #6F99F2;
+}
+
+nav li.submenu {
+    background: url(http://interactivepython.org/runestone/static/webfundamentals/_static/submenu.gif) 95% 50% no-repeat;
+}
+
+nav li.submenu:hover {
+    background-color: #EDD;
+}
+
+
+
+nav ul.level1 li.submenu:hover ul.level2,
+nav ul.level2 li.submenu:hover ul.level3 {
+    display:block;
+}
+nav{
+    margin-left:0px;
+}
+img{
+    height: 500px;
+    width: auto;
+    position: relative;
+    top: 50px;
+    left: 120px;
+}
+#pics img{
+    width: 300px;
+    height: 300px;
+    left: 120px;
+    top: 0px;
+
+}
+body{
+    margin: 0px;
+}
+.foto img{
+  top: 0px;
+  height: 485px;
+  left: 230px;
+  width: 920px;
+}
+.text p{
+    position: relative;
+    width: 315px;
+    
+   
+}
+.foto1 img{
+    position: relative;
+    width: 1040px;
+    left: 347px;
+    top: -870px;
+    height: 385px;
+   
+}
+
+
+.search-box{
+    position: absolute;
+    top:80px;
+    right:0px;
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-box:hover>.search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box:hover>.search-btn{
+   background: white;
+}
+.search-btn{
+    color: #e84118;
+    float:right ;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+.box1 p{
+    
+    height: 270px;
+   text-decoration: #6F99F2;
+  
+}
+.header .navv a.index{
+    background-color: tomato;
+    
+   
+}
+.header .navv a{
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    padding: 5px; 
+}
+.header .navv a:hover{
+    background-color: tomato;
+   
+}
+.header .gg a.pp:hover{
+    background-color: rgb(248, 245, 245);
+
+}
+.gg{
+    position: relative;
+   top: -50px;
+   color: rgb(22, 22, 6);
+   left: 0px;
+  
+
+}
+.header .gg a.pp{
+   text-decoration: none;
+
+}
+.foto{
+    height: 500px;
+}
+.foto2{
+    position: relative;
+    left: -60px;
+}
+.foto3{
+    position: relative;
+    left: 600px;
+    top: -304px;
+}
+.foto4{
+    position: relative;
+    left: 1015px;
+    top: -606px;
+}
+.logo img{
+    width:50px;
+    height:50px;
+    top: -95px;
+    left: 800px;
+    
+}
+.text h1{
+   position: relative;
+   top: -20px;
+}
+.p1{
+    position: relative;
+   
+     top: -20px;
+ } 
+ .text1{
+     position: relative;
+     top: 15px;
+
+ }
+ .text1 h2{
+    position: relative;
+    top: 100px;
+ }
+ .text1 .p2{
+    position: relative;
+    top: 100px;
+ }
+ .box3{
+     width: 100%;
+     height: 310px;
+     background-color: #F6FCC0;
+    
+    
+ }
+ .box3 div{
+     width: 198px;
+     border: 1px gray;
+     float: left;
+     margin-left:25px;
+
+ }
+ .box3 div img{
+   position: relative;
+   height: 230px;
+   width: 230px;
+   top: 80px;
+   float: left;
+ 
+
+}
+.box3 .f1 img{
+    position: relative;
+    left: -12px;
+}
+.box3 .f4 img{
+    position: relative;
+    left:450px;  
+}
+.box3 .f3 img{
+    position: relative;
+    left:331px;  
+}
+.box3 .f2 img{
+    position: relative;
+    left:210px;  
+}
+.tesi{
+    float: right;
+    width: 313px;
+}
+.tesi p{
+   font-size: 0.5cm;
+}
+.tesi h1{
+    color: #36B4D8;
+}
+
+   
+
+
+  
