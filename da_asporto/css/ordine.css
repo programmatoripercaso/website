@@ -323,3 +323,7 @@
       font-size: 1.6rem;
     }
   }
+ .icone img{
+    float: left;
+    margin-top: 5px;
+  }
