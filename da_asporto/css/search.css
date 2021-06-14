@@ -72,7 +72,7 @@ img{
     height: 41px;
     background: none;
     cursor: pointer;
-    border-left: none;
+    border-left: solid 1px rgb(24, 23, 23);
 
 }
 .s_y button:hover{
@@ -103,4 +103,41 @@ body{
     top: -113px;
     width: 30px;
     height: 24px;
+}
+.z{
+    display: none;
+}
+@media(min-width:1050px){
+    .z{
+        display: block;
+
+    }
+    
+    
+    .ad{
+        display: none;
+    }
+
+}
+.ad{
+    float: left;
+    margin-top: 0px;
+}
+.cellulare{
+    margin-top: -30px;
+}
+.dianhua{
+    display: none;
+}
+@media(min-width:1050px){
+    .dianhua{
+        display: block;
+
+    }
+    
+    
+    .ad{
+        display: none;
+    }
+
 }
