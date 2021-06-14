@@ -1,3 +1,4 @@
+*{margin: 0;padding:0}
 body{
     font-family: Roboto;
     background-color: #e76f51;
@@ -41,5 +42,30 @@ body{
 .login input[type="submit"]:hover{
     background-color: #2ecc71;
     transition: 0.5s;
+   
+}
+.header{
+    float: left;
+}
+.a{
+    margin-left: 50px;
+  
+}
+.a{
+ position: relative;
+ top: -330px;
+  
+}
+.header a{
+    display: none;
+}
+@media(min-width:479px){
+    .header a{
+        display:block;
+
+    }
+    .a{
+        display: none;
+    }
    
 }
