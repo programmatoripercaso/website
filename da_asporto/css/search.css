@@ -1,7 +1,7 @@
 *{margin: 0;padding:0}
 
 .wp{
-    width: 960px;
+    width: 60%;
     margin: 0 auto;
     
 }
@@ -107,7 +107,7 @@ body{
 .z{
     display: none;
 }
-@media(min-width:1050px){
+@media(min-width:1250px){
     .z{
         display: block;
 
@@ -129,7 +129,7 @@ body{
 .dianhua{
     display: none;
 }
-@media(min-width:1050px){
+@media(min-width:1249px){
     .dianhua{
         display: block;
 
