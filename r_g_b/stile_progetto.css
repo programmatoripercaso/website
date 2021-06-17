@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS specifico del progetto */
+
+:root {
+    --giallo: #FFB758;
+    --arancio: #F2542D;
+    --rosso: #D24150;
+    --verdone: #127475;
+    --nero: #212121;
+    --bianco: #e4e5e0;
+    
+    --bordo: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Tahoma, Verdana, Arial, sans-serif;
+    margin: 0;
+    background-color: rgba(210,66,80,;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 0 auto;
+}
+
+h3 {
+    color: var(--contrasto);
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    margin:0;
+}
+
+a {
+    color: var(--contrasto);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    color: var(--rosso);
+    background-color: white;
+    padding: 5em 5%;
+    border-bottom: 1em solid var(--rosso);
+}
+
+#logo_progetto {
+    margin: -15em auto -10em auto;
+}
+
+.img_progetto {
+    
+}
+
+main {
+    text-align: center;
+    margin: 3em auto;
+}
+
+footer {
+    color: var(--bianco);
+    background-color: var(--fondoscuro);
+    padding: 1em 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+	margin-left: 3em;
+}
+
+#nome-progetto {
+    margin-top: 0.5em;
+}
+
+#nome-progetto-rosso {
+    color: var(--rosso);
+}
+
+#nome-progetto-verdone {
+    color: var(--verdone);
+}
+
+#nome-progetto-giallo {
+    color: var(--giallo);
+}
+
+p#about-interno {    
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto;
+    line-height: 1.5em;
+    color: var(--nero);
+}
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size:1.5em;
+    margin-bottom: 25px;
+}
+
+.mockup>img {
+    width: 200px;
+    margin: 20px;
+    border-radius: var(--bordo);
+}
+
+.riga {
+    margin: 20px auto;
+}
+
+p#testo-interno {
+    max-width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto 0 auto;
+    line-height: 1.5em;
+}
+
+#link-progetto {
+    border: 0px solid var(--rosso);
+    border-radius: 2em;;
+    background-color: var(--rosso);
+    padding: 1em 1.5em;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 2em auto 1em auto;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {font-size: 3em;}
+}
