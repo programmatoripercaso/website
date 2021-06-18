@@ -11,10 +11,12 @@ body{
     text-align: center;
 }
 #header h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  "Dosis", sans-serif;
 }
 #header h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Dosis", sans-serif;
+    margin-top: -10px;
+    padding: 20px;
 }
 img{
     width: 100%;
@@ -22,6 +24,7 @@ img{
 }
 h1,p{
     padding: 20px;
+    
 }
 .container{
     width: 960px;
@@ -45,15 +48,14 @@ h1,p{
 }
 #mainbody h1{
     font-size: 2em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Dosis", sans-serif;
     font-weight: 600;
 }
 #mainbody p{
     font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    text-align: justify;
-    color: #868585;
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    color: #0c0b0b;
 }
 
 #sidebar{
@@ -62,23 +64,23 @@ h1,p{
 }
 #sidebar p{
     font-size: 1.3em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    text-align: justify;
-    color: #868585;
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    color: #0c0b0b;
 }
 #sidebar h1{
     font-size: 1.8em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:sans-serif;
    
 }
 #footer{
     clear: both;
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: "Dosis", sans-serif;
     
 }
 #footer h2{
     color: #868585;
+    
     
 }
 
@@ -87,7 +89,7 @@ h1,p{
     display: inline-block;
     padding: 7px 15px;
     color: #3b3b3b;
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: "Dosis", sans-serif;
 }
 ul{
     
