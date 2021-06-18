@@ -1,4 +1,11 @@
 *{margin: 0;padding:0}
+body{
+    margin: 0px;
+    width: 100%;
+    min-width: 334px;
+    max-width: 100%;
+    background-color: rgb(204, 218, 209);
+}
 
 .wp{
     width: 60%;
@@ -89,15 +96,14 @@ img{
     color: darkred;
 }
 .header{
-    background-color: aquamarine;
+    background-color: #ffcbdd;
+    width: 100%;
 }
 .foto{
     height:59px;
     width: 100px;
 }
-body{
-    background-color: rgb(204, 218, 209);
-}
+
 .nav img{
     position: relative;
     top: -113px;
