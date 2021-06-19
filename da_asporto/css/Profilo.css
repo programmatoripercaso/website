@@ -1,6 +1,7 @@
 .container{
     width: 100%;
     height: auto;
+    font-family:  "Dosis", sans-serif;
 }
 .header .navv a.Profilo{position: relative;
     background-color: tomato;
@@ -128,8 +129,11 @@
     text-align: center;
     top: -20px;
     overflow: hidden;
+    width: 400px;
 }
 .p1{
-  width: 400px;
-  text-align: justify;
+  width: 95%;
+  padding: 5px 0px;
+  margin-left: 11px;
+  
 }
