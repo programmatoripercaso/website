@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS specifico del progetto */
+
+:root {
+  --giallochiaro: #FFDA00;
+  --gialloscuro: #FFC200;
+  --grigio: #454545;
+  --nero: #1D1D1D;
+  --bianco: #FFFCF5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: linear-gradient(to right, var(--grigio) , var(--nero));
+}
+
+body {
+    font-family: "Myriad Pro", "Helvetica", "Gill Sans", "Gill Sans MT", "Arial", sans-serif;
+    margin: 0;
+    color: var(--bianco);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size:2em;
+    margin:0;
+}
+
+h3 {
+    color: var(--gialloscuro);
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    margin:0;
+}
+
+a {
+    color: var(--gialloscuro);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    color: var(--bianco);
+    background-color: rgba(18,18,18,0.50);
+    padding: 5em 5%;
+}
+
+#logo-nd {
+    margin-top: -3.5em;
+}
+
+main {
+    text-align: center;
+    margin: 3em auto;
+}
+
+footer {
+    color: var(--bianco);
+    background-color: rgba(18,18,18,0.50);
+    padding: 1em 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+	margin-left: 3em;
+}
+
+#nome-progetto {
+    margin-top: -0.5em;
+}
+
+p#about-interno {
+    font-style: oblique;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.highlights {
+    text-transform: none;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--gialloscuro)
+}
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size:1.5em;
+    margin-bottom: 25px;
+}
+
+.mockup>img {
+    width: 300px;
+    margin: 2em 2em 3em 2em;
+}
+
+.mockup>img:hover {
+  transform: scale(1.5);
+  transition: 0.2s;
+}
+
+.riga {
+    margin: 20px auto;
+}
+
+p#testo-interno {
+    max-width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto 0 auto;
+    line-height: 1.5em;
+}
+
+#link-progetto {
+    background-image: linear-gradient(to right, var(--giallochiaro) , var(--gialloscuro));
+    border-radius: 2em;
+    border: none;
+    box-shadow: 0 0 0 1px var(--grigio);
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--nero);
+    padding: 15px 30px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {font-size: 3em;}
+}
+
+@media screen and (max-width: 500px) {
+    h1 {font-size: 1em;}
+    .mockup>img {width: 80%; margin: 1em auto;}
+    p#testo-interno {max-width: 80%; font-size: 1em;}
+}
