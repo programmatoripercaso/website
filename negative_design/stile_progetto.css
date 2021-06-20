@@ -139,7 +139,6 @@ p#testo-interno {
 }
 
 @media screen and (max-width: 500px) {
-    h1 {font-size: 1em;}
     .mockup>img {width: 80%; margin: 1em auto;}
     p#testo-interno {max-width: 80%; font-size: 1em;}
 }
