@@ -1,0 +1,158 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>golden Hans</title>
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment-with-locales.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<style>
+    .contants {
+        width: 100%;
+        background: #f5f5f5;
+    }
+    
+    .piattiH2 {
+        background-image: -webkit-linear-gradient(left, #1dbfc0, #1dbfc0, #07f57b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+    
+    .split_hans {
+        width: 80%;
+        margin: 50px auto 0;
+    }
+    
+    .left_hans {
+        float: left;
+        width: 46%;
+        padding-bottom: 20px;
+    }
+    
+    .right_hans {
+        float: right;
+        width: 46%;
+    }
+    
+    .dyfirst:first-letter {
+        font-size: 400%;
+        font-weight: bold;
+        color: #1dbfc0;
+    }
+    
+    .about_title {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .split_hans p {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    
+    .index_about_us {
+        background: none;
+        padding: 0 0 40px 0;
+    }
+    
+    @media (max-width: 767px) {
+        .split_hans {
+            width: 100%;
+        }
+        .left_hans {
+            width: 95%;
+            float: none;
+            margin: 0 auto;
+        }
+        .right_hans {
+            width: 95%;
+            float: none;
+            margin: 0 auto;
+        }
+    }
+</style>
+
+<body>
+    <input type="text" hidden name="" id="hiddens" value="0">
+    <div class="container">
+
+        <div id='headers'></div>
+        <div id="banners"></div>
+
+        <div class="">
+
+            <section class="text-left about_title" style="padding: 30px 0;">
+                <h1 style="margin-top: 10px;" class="piattiH2">Questa e'...</h1>
+                <h1 class="piattiH2">la storia di noi.</h1>
+            </section>
+
+            <div class="split_hans">
+                <div class="left_hans">
+                    <p class="dyFirst">Da quando l'autunno del 1993, allora Meixi direttore di birreria Hans fondatore di Sun Liguo Mr. to Monaco, Germania era lei.</p>
+                    <p>Festival OKTOBERFEST.Ha visitato e il gusto della birra di dozzine di birra locale birra birra birra varia in stile, è questo modo di birwing e gusto unico, stile distintivo della birra birra prodotta in casa profondamente attratto.
+                        All'inizio di 1994, Sun Liguo ha deciso di dimettersi e diversi partner simili aperto allo stesso tempo,La birra e il cibo e la bevanda scongelato per una birra Square.La birra prodotta dalla Germania Muller.</p>
+                    <p>Attraverso gli sforzi di innumerevoli giorni e notti, all'inizio del 1995, il primo barile ha birra in stile tedesco è nato, per commemorare il maestro tedesco della birra Hans.Muller e birra prodotta in casa chiamato ha birra.</p>
+                    <p>A 2000, il gruppo di controllo ha deciso di aumentare gli investimenti nell'industria della catena alimentare e, in seguito alla caduta di 2001, gli investimenti nella creazione del Harbin Jinhanisi Food and Beverage Co.Ltd.,</p>
+                </div>
+                <div class="right_hans">
+                    <p>ha allestito una birra fresca e un barbecue sudamericano, il buffet cinese e occidentale è stato uno dei primi ristoranti di barbecue della birra, al fine di riflettere il Hans me oltre, e spirito intraprendente, il ristorante chiamato
+                        "Hans South American barbecue shop", per Hans birra fresca Golden Hans birra fresca birra fresca.</p>
+                    <p>Le imprese nello sviluppo sia della società che dello Stato, dei lavoratori e degli azionisti. Hans si attiene rigorosamente al "mobilizzare l'entusiasmo del personale è il mezzo più efficace, non dovrebbe essere un indice di profit
+                        to ma un più alla società, e partecipare attivamente?</p>
+                    <p>la carità nazionale e le varie attività di assistenza sociale, prestare attenzione agli affari pubblici della comunità. A tal fine, Golden Hans ha ottenuto il riconoscimento sociale diffuso.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <section class="text-center index_about_us">
+            <img src="./img/video.png" class="img-responsive video" alt="Responsive image " alt="">
+        </section>
+
+        <div id="footers"></div>
+    </div>
+
+
+
+
+    <script src="./js/header.js"></script>
+    <script src="./js/banner.js"></script>
+    <script src="./js/footer.js"></script>
+    <script>
+        $(document).ready(function() {
+            let navbarCenter = $('.navbarCenter')
+            let item = navbarCenter.children()[2]
+            $(item).addClass('active')
+        })
+
+        function addClass() {
+            console.log('.;;')
+            let val = $('#hiddens').val()
+            console.log(val)
+            if (val == 0) {
+                $('.nav_bar_hans').addClass('nav_bar_hans_bg')
+                $('#hiddens').val(1)
+
+            } else {
+                let timer = setTimeout(() => {
+                    $('.nav_bar_hans').removeClass('nav_bar_hans_bg')
+                    $('#hiddens').val(0)
+                }, 325);
+
+            }
+        }
+    </script>
+</body>
+
+</html>

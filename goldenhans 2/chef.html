@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>golden Hans</title>
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment-with-locales.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<style>
+    .contants {
+        width: 100%;
+        background: #f5f5f5;
+    }
+    
+    .backg {
+        position: relative;
+        padding: 100px 0;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .backg img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        vertical-align: middle;
+        opacity: 0.1;
+    }
+    
+    .backg p {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        color: rgba(0, 0, 0, 0.822);
+        padding-top: 20px;
+    }
+    
+    @media (max-width: 767px) {
+        .backg {
+            padding: 50px 0;
+        }
+        .backg p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .backg img {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <input type="text" hidden name="" id="hiddens" value="0">
+    <div class="container">
+
+        <div id='headers'></div>
+        <div id="banners"></div>
+
+        <div class="contants" style="padding-top: 30px;">
+
+
+            <section class="text-center" style="margin-bottom: 30px;">
+                <h2 class="">CHEF</h2>
+                <p class="Gold_hans">—— golden | Hans——</p>
+                <p>Quando ci sediamo al tavolo e godiamo il cibo delizioso, gli chef sono occupati.</p>
+                <p>Mentre stavamo ridendo con il condizionatore acceso, gli chef stavano sudando nel caldo.</p>
+            </section>
+
+            <div class="row wrapperRow">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                    <img src="./img/9.png " class="img-responsive " alt="Responsive image ">
+                </div>
+            </div>
+            <div class="backg">
+                <img src="./img/10.png" alt="">
+                <p>JOHN SMITH, nato a Los Angeles nel 1987, </p>
+                <p>ha lavorato a lungo per Bevete Hans.</p>
+                <p>È venuto a Shanghai e ha guidato un team di 25 </p>
+                <p>chef professionisti tra cui Mao Xiaoyi ,</p>
+                <p>Jack Dawson. ingredienti freschi di stagione di qualità.</p>
+                <p>Cucina il puro sapore gourmet degli Stati Uniti in modo tradizionale.</p>
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div id="footers"></div>
+    </div>
+
+
+
+
+    <script src="./js/header.js"></script>
+    <script src="./js/banner.js"></script>
+    <script src="./js/footer.js"></script>
+    <script>
+        $(document).ready(function() {
+            let navbarCenter = $('.navbarCenter')
+            let item = navbarCenter.children()[3]
+            $(item).addClass('active')
+        })
+
+        function addClass() {
+            console.log('.;;')
+            let val = $('#hiddens').val()
+            console.log(val)
+            if (val == 0) {
+                $('.nav_bar_hans').addClass('nav_bar_hans_bg')
+                $('#hiddens').val(1)
+
+            } else {
+                let timer = setTimeout(() => {
+                    $('.nav_bar_hans').removeClass('nav_bar_hans_bg')
+                    $('#hiddens').val(0)
+                }, 325);
+
+            }
+        }
+    </script>
+</body>
+
+</html>

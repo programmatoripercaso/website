@@ -1,0 +1,257 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>golden Hans</title>
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment-with-locales.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<style>
+    .contants {
+        width: 100%;
+        /* background: #f5f5f5; */
+    }
+    
+    .piattiH2 {
+        /* background-image: -webkit-linear-gradient(left, #1dbfc0, #1dbfc0, #07f57b); */
+        /* -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+    }
+    
+    .piatti_bg {
+        width: 71%;
+        margin: 100px auto 0;
+        overflow: hidden;
+        background: #fff;
+        padding-bottom: 40px;
+    }
+    
+
+    .pia_item {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+    .pia_img {
+        /* width: 383px;
+        height: 292px; */
+        width: 100%;
+    }
+    .pia_imgS {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    .pin_min {
+        display: none;
+    }
+    .pia_title { text-align: center; font-family: '苹方'; font-weight: bolder; margin-top: 35px;}
+    .pia_contant {width:60%; margin: 40px auto 0;}
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+        .piatti_bg {
+            display: none;
+        }
+        .pia_item {
+            float: none;
+            width: 100%;
+        }
+
+        .min_img {
+            width: 80%;
+            overflow: hidden;
+            margin: 20px auto;
+
+        }
+
+        .min_img img {
+            width: 100%;
+            display: block;
+            position: relative;
+            left: -8px;
+        }
+
+        .min_img_right img {
+            left: 8px;
+        }
+
+        .pia_contant {
+            margin: 20px auto 40px;
+            width: 75%;
+        }
+
+        .pia_title {
+            margin-top: 15px;
+        }
+
+        .pin_min {
+            display: block;
+        }
+    }
+
+
+    @media (max-width: 767px) {
+        .piatti_bg {
+            display: none;
+        }
+        .pia_item {
+            float: none;
+            width: 100%;
+        }
+
+        .min_img {
+            width: 80%;
+            overflow: hidden;
+            margin: 20px auto;
+
+        }
+
+        .min_img img {
+            width: 100%;
+            display: block;
+            position: relative;
+            left: -8px;
+        }
+
+        .min_img_right img {
+            left: 8px;
+        }
+
+        .pia_contant {
+            margin: 20px auto 40px;
+            width: 75%;
+        }
+
+        .pia_title {
+            margin-top: 15px;
+        }
+
+        .pin_min {
+            display: block;
+        }
+    }
+
+</style>
+
+<body>
+    <input type="text" hidden name="" id="hiddens" value="0">
+    <div class="container">
+        <div id='headers'></div>
+        <div id="banners"></div>
+        <div class="contants">
+            <section class="text-center" style="padding: 30px 0;">
+                <p>GOLDENHANS NON VEDE L'ORA DELLA SUA</p>
+                <h2 style="margin-top: 30px;" class="piattiH2">Possiamo dire che GoldenHans </h2>
+                <h2 class="piattiH2">è il barbecue più delizioso</h2>
+            </section>
+
+            <div class="piatti_bg">
+                <div style="overflow: hidden;">
+                    <div class="pia_left pia_item">
+                        <div class="text-center pia_title">GOLDENHANS BARBECUE</div>
+                        <div class="pia_contant">La carne lavata dal fuoco di carbone, l'aroma è già traboccante, e a causa del pepe e sale salsa piccante per migliorare il colore, diventano più saporito, tenero, croccante, fresco e salato, piccante un momento in bocca ruzzolando danza su.</div>
+                    </div>
+                    <div class="pia_right pia_item">
+                        <img src="./img/piatti1.png" class="pia_img" alt="">
+                    </div>
+                </div>
+                <div style="overflow: hidden;">
+                    <div class="pia_left pia_item" style="position:relative;left:22px;">
+                        <img src="./img/piatti2.png" class="pia_img" alt="">
+                    </div>
+                    <div class="pia_right pia_item">
+                        <div class="text-center pia_title">HANS FRESH BEER</div>
+                        <div class="pia_contant">Versare un bicchiere di birra, il liquido giallo-arancione, gorgogliante dorato nella luce multicolore, l'aroma di grano che colpisce il naso così pesantemente che non si può resistere a prendere un sorso.</div>
+                    </div>
+                </div>
+                <div style="overflow: hidden;">
+
+                    <div class="pia_left pia_item">
+                        <div class="text-center pia_title">GOLDENHANS STAPLE FOOD</div>
+                        <div class="pia_contant">I due strati di polpette di manzo sono arrostiti a 300 gradi e la carne è fragrante, le quattro fette di formaggio a sandwich nell'altro strato rilasciano il ricco sapore cremoso, seguito da uno strato di cetriolo sottaceto, croccante e crostata, strati di gusto ricco, comfort di gusto super soddisfacente!</div>
+                    </div>
+                    <div class="pia_right pia_item">
+                        <img src="./img/piatti3.png" class="pia_img" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="pin_min">
+                <div class="min_img">
+                    <img src="./img/piatti1.png" alt="">
+                </div>
+                <div class="">
+                    <div class="text-center pia_title">GOLDENHANS BARBECUE</div>
+                    <div class="pia_contant">La carne lavata dal fuoco di carbone, l'aroma è già traboccante, e a causa del pepe e sale salsa piccante per migliorare il colore, diventano più saporito, tenero, croccante, fresco e salato, piccante un momento in bocca ruzzolando danza su.</div>
+                </div>
+
+                <div class="min_img min_img_right">
+                    <img src="./img/piatti2.png" alt="">
+                </div>
+                <div class="pia_right pia_item">
+                    <div class="text-center pia_title">HANS FRESH BEER</div>
+                    <div class="pia_contant">Versare un bicchiere di birra, il liquido giallo-arancione, gorgogliante dorato nella luce multicolore, l'aroma di grano che colpisce il naso così pesantemente che non si può resistere a prendere un sorso.</div>
+                </div>
+
+                <div class="min_img">
+                    <img src="./img/piatti3.png" alt="">
+                </div>
+                <div class="pia_left pia_item">
+                    <div class="text-center pia_title">GOLDENHANS STAPLE FOOD</div>
+                    <div class="pia_contant">I due strati di polpette di manzo sono arrostiti a 300 gradi e la carne è fragrante, le quattro fette di formaggio a sandwich nell'altro strato rilasciano il ricco sapore cremoso, seguito da uno strato di cetriolo sottaceto, croccante e crostata, strati di gusto ricco, comfort di gusto super soddisfacente!</div>
+                </div>
+            </div>
+
+
+            <!-- <div class="piatti_bg">
+                <img src="./img/11.png" alt="">
+            </div> -->
+        </div>
+
+        <div id="footers"></div>
+    </div>
+
+
+
+
+    <script src="./js/header.js"></script>
+    <script src="./js/banner.js"></script>
+    <script src="./js/footer.js"></script>
+    <script>
+        $(document).ready(function() {
+            let navbarCenter = $('.navbarCenter')
+            let item = navbarCenter.children()[1]
+            $(item).addClass('active')
+        })
+
+        function addClass() {
+            console.log('.;;')
+            let val = $('#hiddens').val()
+            console.log(val)
+            if (val == 0) {
+                $('.nav_bar_hans').addClass('nav_bar_hans_bg')
+                $('#hiddens').val(1)
+
+            } else {
+                let timer = setTimeout(() => {
+                    $('.nav_bar_hans').removeClass('nav_bar_hans_bg')
+                    $('#hiddens').val(0)
+                }, 325);
+
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>golden Hans</title>
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment-with-locales.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<style>
+    .contants {
+        width: 100%;
+        background: #f5f5f5;
+        padding-bottom: 30px;
+    }
+    
+    .backg {
+        position: relative;
+        padding: 100px 0;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .backg img {
+        height: 670px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        vertical-align: middle;
+        opacity: 0.1;
+    }
+    
+    .backg p {
+        font-size: 30px;
+        line-height: 50px;
+        font-weight: 600;
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        color: #1dbfc0;
+    }
+    
+    @media (max-width: 767px) {
+        .backg {
+            padding: 50px 0;
+        }
+        .backg p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .backg img {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <input type="text" hidden name="" id="hiddens" value="0">
+    <div class="container">
+
+        <div id='headers'></div>
+        <div id="banners"></div>
+
+        <div class="contants">
+
+
+
+            <div class="backg">
+                <img src="./img/chatbgc.png" alt="">
+                <p>N. 40, Xidazhi Street, distretto di Nangang,</p>
+                <p>città di Harbin, provincia di Heilongjiang</p>
+                <p>Telefono: 0451-82669999</p>
+
+                <p style="margin-top: 30px;">4B, Dajing Street, Shijiazhuang,</p>
+                <p>provincia di Hebei</p>
+                <p>Telefono: 0311-86036186</p>
+
+                <p style="margin-top: 30px;">No.9 Future City, West Second Ring Road,</p>
+                <p>Xilinhot, Mongolia Interna</p>
+                <p>Telefono: 0479-2770333</p>
+            </div>
+            <div class="clearfix"></div>
+            <section class="text-center marginHeight30">
+                <h2 class="">Benvenuto</h2>
+                <p class="Gold_hans">—— golden | Hans——</p>
+                <p>GoldenHans non vede l'ora della sua visita.</p>
+                <p style="margin-top: 10px;" class="bold"><span>Telefono di prenotazione:</span> <span class="phone">0451-82669999</span></p>
+                <p>sudando nel caldo.</p>
+            </section>
+
+            <div class="text-center phoneImg"><img src="./img/8.png" alt=""></div>
+
+        </div>
+
+        <div id="footers"></div>
+    </div>
+
+
+
+
+    <script src="./js/header.js"></script>
+    <script src="./js/banner.js"></script>
+    <script src="./js/footer.js"></script>
+    <script>
+        $(document).ready(function() {
+            let navbarCenter = $('.navbarCenter')
+            let item = navbarCenter.children()[4]
+            $(item).addClass('active')
+        })
+
+        function addClass() {
+            console.log('.;;')
+            let val = $('#hiddens').val()
+            console.log(val)
+            if (val == 0) {
+                $('.nav_bar_hans').addClass('nav_bar_hans_bg')
+                $('#hiddens').val(1)
+
+            } else {
+                let timer = setTimeout(() => {
+                    $('.nav_bar_hans').removeClass('nav_bar_hans_bg')
+                    $('#hiddens').val(0)
+                }, 325);
+
+            }
+        }
+    </script>
+</body>
+
+</html>
