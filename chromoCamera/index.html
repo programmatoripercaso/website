@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- TODO: Modificare lo stylesheet a piacere (opzionale) -->
+    <link rel="stylesheet" href="stile_progetto.css" type="text/css">
+    <title>ChromoCamera</title>
+</head>
+
+<body>
+    <header>
+        <!-- TODO: Cambiare il logo con il logo del progetto -->
+        <a href="#"><img src="logo_CC.svg" alt="Logo chromoCamera"></a>
+        <!-- TODO: Cambiare nome e about -->
+        <p id="autore">– L_A_B –</p>
+
+        <!-- TODO: Aggiungere il link al progetto -->
+        <a href="https://programmatoripercaso.it/">
+            <button id="link-progetto">Visita il progetto</button>
+        </a>
+    </header>
+
+    <main>
+        <!-- TODO: Cambiare il testo -->
+        <p class="testo-interno"><span class="highlight">ChromoCamera</span> nasce nel 2020 durante il corso di Sistemi Interattivi presso l'Accademia
+            di
+            Belle Arti di Napoli. La situazione pandemica ha svolto un ruolo cruciale nella fase di
+            brainstorming poiché ha messo in luce che molte dell'esperienze online sono migliorabili, tra queste quella
+            dello <span class="highlight">shopping online.</span></p>
+        <p class="testo-interno">
+            Da qui è emerso che uno dei passaggi fondamentali che differenzia l'esperienza online e offline è il
+            <span class="highlight">fitting gli outfit</span>, naturalmente impossibile online. Ecco perché abbiamo pensato ad un servizio che,
+            utilizzando la <span class="highlight"><a href="https://www.rm-style.com/armocromia-stagioni-sottogruppi/">teoria dell'armocromia</a></span>, aiutasse nella scelta dei colori partendo dalla cromia di base di
+            ogni persona.</p>
+        <p class="testo-interno">
+            Nel 2021, durante il corso di Web Design, abbiamo pensato di implementare il nostro progetto con un sito web
+            che ne permettesse l'utilizzo, arricchendo l'esperienza anche con <span class="highlight">suggerimenti personalizzati</span> di capi di
+            abbigliamento in base alla propria stagione cromatica ed altre preferenze.
+        </p>
+        <section class="mockup">
+            <!-- TODO: Inserire immagini che abbiano senso col progetto -->
+            <img src="img/screen_autumn.svg" onclick="openModal(this);">
+            <img src="img/screen_winter.svg" onclick="openModal(this);">
+            <img src="img/screen_summer.svg" onclick="openModal(this);">
+            <img src="img/screen_spring.svg" onclick="openModal(this);">
+        </section>
+
+        <object type="image/svg+xml" data="gender.svg">
+            <img src="gender.svg" />
+        </object>
+
+        <h2 id="ty">Thank you <span style="color:#6c63ff">&#128156;</span></h2>
+
+        <p class="componenti">
+            Salvatore Cirillo – Elvira Leveque – Francesca Napolitano
+        </p>
+    </main>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="">
+        </div>
+        <span id="close" class="close">&times;</span>
+    </div>
+
+    <footer>
+        <a href="../index.html">
+            <div id="logo-titolo"><img src="logo-nero.svg" height="30em" alt="Logo esteso PPC"></div>
+        </a>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="info.html">Info</a>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
