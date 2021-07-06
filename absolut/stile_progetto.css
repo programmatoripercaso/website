@@ -21,6 +21,7 @@
 body {
     font-family: Roboto, Tahoma, Verdana, Arial, sans-serif;
     margin: 0;
+    background-color: var(--nero);
 }
 
 h1 {
@@ -37,6 +38,7 @@ h3 {
 
 p {
     margin:0;
+    color: #ffff
 }
 
 a {
@@ -49,12 +51,13 @@ header {
     text-align: center;
     color: var(--bianco);
     background-color: var(--nero);
-    padding: 5em 5%;
+    padding: 5em 5% 0em;
 }
 
 main {
     text-align: center;
     margin: 3em auto;
+    background-color: var(--nero);
 }
 
 footer {
@@ -109,7 +112,7 @@ p#testo-interno {
 #link-progetto {
     border: 0px solid var(--contrasto);
     border-radius: var(--bordo);
-    background-color: var(--tonomedio);
+    background-color: var(--contrasto);
     padding: 1em 1.5em;
     color: var(--bianco);
     font-size: 1em;
