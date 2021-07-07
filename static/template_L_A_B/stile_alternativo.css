@@ -155,7 +155,7 @@ h3:after {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     justify-content: center;
 }
 
@@ -168,11 +168,12 @@ hr {
 }
 
 .card {
-    width: 300px;
-    margin: 25px;
+    min-width: 100%;    
+    margin: 25px 0;
     padding: 40px;
     background-color: var(--grigio);
     border-radius: var(--bordo);
+    flex: 1 0 0;
 }
 
 .card img {
@@ -271,10 +272,17 @@ a#licenza-freepik {
 
 @media screen and (min-width: 800px) {
     h1 {font-size: 3em;}
+    .anno {width: 90%; margin: 0 auto;}
+    .card {width: 300px; margin: 25px; min-width: 300px; flex: 0 0 0;}
     #about {width: 70%; margin: 1.5em auto;}
     .contenitore-testo-info {flex-basis: 60%;}
     #contenitore-invert {flex-direction: row-reverse;}
     .immagini-info {width: auto; height: 250px; margin-top: 0;}
     #licenza-freepik {font-size: 0.8em;}
     #cambia-css {right: -4em;}
+}
+
+@media screen and (max-width: 350px) {
+    p.card-titolo {font-size: 1.2em;}
+    p.card-autore {font-size: 0.8em;}
 }
