@@ -227,11 +227,11 @@ a#licenza-freepik {
     margin: 0 auto 0.5em auto;
 }
 
-a[href$='https://www.hetzner.com/'] {
+a[href$='https://www.hetzner.com'] {
 	color: var(--lightblue) ;
 }
 
-a[href$='http://nginx.org/'] {
+a[href$='http://nginx.org'] {
 	color: var(--lightblue) ;
 }
 
