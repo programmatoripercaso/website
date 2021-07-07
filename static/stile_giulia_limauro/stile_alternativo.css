@@ -227,6 +227,10 @@ a#licenza-freepik {
     margin: 0 auto 0.5em auto;
 }
 
+a[href$='https://godotengine.org'] {
+	color: var(--lightblue) ;
+}
+
 a[href$='https://www.hetzner.com'] {
 	color: var(--lightblue) ;
 }
