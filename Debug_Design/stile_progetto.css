@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS specifico del progetto */
+
+:root {
+    --fondochiaro: #023373;
+    --tonomedio: #034AA6;
+    --contrasto: #3953FF;
+    --fondoscuro: #F3F3F3;
+    --nero: #333333;
+    --bianco: #ffffff;
+    --blue: #3953FF;
+
+    --seserve: #05F2DB;
+
+    --bordo: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Tahoma, Verdana, Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+
+    font-size:2em;
+    margin:0;
+}
+
+h3 {
+    color: var(--contrasto);
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    margin:0;
+}
+
+a {
+    color: var(--bianco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    color: var(--nero);
+    background-color: var(--fondoscuro);
+    padding: 5em 5%;
+}
+
+main {
+    text-align: center;
+    margin: 3em auto;
+}
+
+footer {
+    color: var(--bianco);
+    background-color: var(--contrasto);
+    padding: 1em 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+}
+
+nav a {
+	margin-left: 3em;
+  font-weight: 500;
+}
+
+#nome-progetto {
+    margin-top: 0.5em;
+}
+
+p#about-interno {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto;
+    line-height: 1.5em;
+}
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size:1.5em;
+    margin-bottom: 25px;
+}
+
+.mockup>img {
+    width: 200px;
+    margin: 20px;
+    border-radius: var(--bordo);
+}
+
+span.highlight {
+    color: var(--blue);
+    font-weight: 500;
+}
+
+.riga {
+    margin: 20px auto;
+}
+
+p#testo-interno {
+    max-width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto 0 auto;
+    line-height: 1.5em;
+}
+
+#link-progetto {
+    border: 1px solid var(--contrasto);
+    border-radius: var(--bordo);
+    background-color: var(--bianco);
+    padding: 1em 1.5em;
+    color: var(--contrasto);
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1em auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#link-progetto:hover {
+    border: 1px solid var(--contrasto);
+    border-radius: var(--bordo);
+    background-color: var(--contrasto);
+    color: var(--bianco);
+}
+
+@media screen and (min-width: 800px) {
+    h1 {font-size: 3em;}
+}

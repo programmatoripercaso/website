@@ -98,6 +98,7 @@ main {
     margin-top:2em;
     box-shadow: 0 0 10px #423ca844;
     border-radius: 1em;
+    cursor: pointer;
 }
 
 p.testo-interno {
@@ -138,7 +139,7 @@ p.componenti {
 .close {
     position: absolute;
     float: right;
-    top: .5em;
+    top: .3em;
     right: .5em;
     font-size: 3em;
 }
@@ -183,6 +184,7 @@ p.componenti {
 .modal-content img {
     width: 100%;
     border-radius: 1em;
+    margin-top: 2em;
 }
 
 footer {
