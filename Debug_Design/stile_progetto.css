@@ -118,7 +118,7 @@ p#testo-interno {
 #link-progetto {
     border: 1px solid var(--contrasto);
     border-radius: var(--bordo);
-    background-color: var(--bianco);
+    background-color: var(--fondoscuro);
     padding: 1em 1.5em;
     color: var(--contrasto);
     font-size: 1em;
