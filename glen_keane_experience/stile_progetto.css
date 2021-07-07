@@ -127,6 +127,14 @@ p#testo-interno {
     cursor: pointer;
 }
 
+a#licenza-freepik {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 0.6em;
+    color: var(--neutral);
+    margin: 0 auto 0.5em auto;
+}
+
 @media screen and (min-width: 800px) {
     h1 {font-size: 3em;}
 }

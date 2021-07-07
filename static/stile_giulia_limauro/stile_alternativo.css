@@ -181,6 +181,7 @@ footer {
 
 /*pagina info*/
 p#info-testo {
+    color: var(--neutral);
     text-align: left;
     font-size: 1.2em;
     line-height: 1.5em;
@@ -207,6 +208,7 @@ p#info-testo {
 }
 
 p#info-testo2 {
+	color: var(--neutral);
     text-align: left;
     font-size: 1.2em;
     line-height: 1.5em;
@@ -221,14 +223,21 @@ a#licenza-freepik {
     font-weight: 200;
     font-style: italic;
     font-size: 0.6em;
-    color: gray;
+    color: var(--neutral);
     margin: 0 auto 0.5em auto;
 }
 
+a[href$='https://www.hetzner.com/'] {
+	color: var(--lightblue) ;
+}
 
+a[href$='http://nginx.org/'] {
+	color: var(--lightblue) ;
+}
 
-
-
+a[href$='https://github.com/programmatoripercaso/website'] {
+	color: var(--lightblue) ;
+}
 
 
 @media screen and (min-width: 800px) {
