@@ -41,6 +41,12 @@ var stylesheets = [
         logoFooter: "stile_giulia_limauro/Logo_esteso.png",
         fonte: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     },
+	{
+    	foglio_stile: "stile_bergamasco_romaniello/stile_alternativo.css", 
+    	logo: "stile_bergamasco_romaniello/logo-com.png", 
+    	logoFooter: "stile_bergamasco_romaniello/logo-ext.png",
+    	fonte: "https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap"
+    },
     // aggiungere qui sopra dopo la virgola la configurazione del nuovo stile
 ]
 
