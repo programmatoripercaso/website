@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rework</title>
+	<style type="text/css">
+
+		html, body {
+			height: 90%;} /* centra box */
+
+		body {
+		  display: flex;
+		  position: relative;
+		  flex-direction: row;
+		  justify-content: center;
+		  align-items: center;
+		  background: #d3d3d3;
+		}
+
+		.card {  /* tutta la card */
+			display: flex;
+			flex-direction: row;
+			position: relative;
+		}
+
+		.card_header {  /* titolo + cerchio*/
+		  display: flex;
+		  position: relative;
+		  z-index: 1;
+		  flex-direction: column;
+		  align-items: center;
+		  border-top-left-radius: 15px;
+		  border-top-right-radius: 15px;
+		  width: 200px;
+		  height: 90px;
+		  background: #b8bbe6;
+		  border: 1px solid black;
+		  box-shadow: 3
+
+		}
+		.circle {
+			position: relative;
+			justify-content:  center;
+			display: flex;
+			top: -25px	;
+			width: 50px;
+		  	height: 50px;
+		}
+
+		.card_circle {  /* cerchio */
+		  position: absolute; 
+		  z-index: 3; /* deve stare sopra gli altri elementi*/
+		  width: 50px;
+		  height: 50px;
+		  border: 1px solid black; /* bordo nero */
+		  top: -1px;
+		  border-radius: 50%;
+		  box-shadow: 0 0 0 5px #d3d3d3;/* spazio tra il box e il cerchio */
+		  background: #bee2b2;
+		  display: flex; 
+  		  align-items: center;	/* allinea verticale */
+  		  justify-content: center;	/* allinea orizzontale */
+  		  font-family: 'Courier New', monospace;
+		  font-weight: 600;
+
+		}
+
+
+		.header_top_border {
+		  position: absolute; 
+		  z-index: 3; /* deve stare sopra gli altri elementi*/
+		  width: 62px;
+		  height: 62px;
+		  border-bottom:  1px solid black; /* bordo nero */	
+		  border-right:  1px solid 	 #d3d3d3;
+		  border-left:  1px solid black;
+		  border-top: 1px solid #d3d3d3;
+		  top: -7.9px;
+		  border-radius: 50%;
+		  transform: rotate(-45deg);
+		}
+
+		.card_title {  /* titolo */
+			position: absolute;
+			top: 70px;
+			width: 200px;
+			text-align: center;
+			align-items: center;	/* allinea verticale */
+  		  	justify-content: center;	/* allinea orizzontale */
+  		  	font-family: 'Courier New', monospace;
+  		  	font-weight: 700;
+		}
+
+
+		.card_content {
+			  display: flex;
+			  position: absolute;
+			  top: 95px;
+			  justify-content: center;
+			  width: 200px;
+			  height: 200px;
+			  border-bottom-left-radius: 15px;
+			  border-bottom-right-radius: 15px;
+			  border: 1px solid #2596be;
+			  background: #b0cad9;
+		}
+
+		.team_list {
+			position: relative;
+			justify-content: left;
+			top: 0;
+
+			width: 100%;
+			height: 93%;
+			overflow-y: scroll;
+			scrollbar-color: #b0cad9#c0d5da;
+
+
+		}
+
+
+		.team_list li {
+			position: relative;
+			left: -20px;
+			padding-top: 10px;
+			font-size: 13px;
+			font-family: 'Courier New', monospace;
+			font-weight: 600;
+			color: #2596be;
+
+		}
+
+
+		.gallery_entry{
+			position: relative;
+			height: 70px;
+		}
+
+		.gallery_entry h4 {
+			font-family: 'Courier New', monospace;
+			font-weight: 600;
+			color: #2596be;
+		}
+
+		.gallery {
+			display: flex;
+			flex-direction: column;
+			justify-content: left;
+			position: relative;
+			justify-content: left;
+			padding-left: 20px;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 93%;
+			overflow-y: scroll;
+			scrollbar-color: #b0cad9#c0d5da;
+
+		}
+
+		.images_board{
+			position: relative;
+			top: -15px;
+			display: flex;
+			flex-direction: row;
+			justify-content: left;
+		}
+
+		.images_board img {
+			width: 35px;
+			height: 35px;
+			padding-right: 4px;
+		}
+
+		.images_board img:hover {
+			width: 35px;
+			height: 35px;
+			padding-right: 4px;
+			opacity: 0.7;
+			transition: 0.3s;
+		}
+
+		#team_work {
+		}
+
+		#work_in_progress {
+			padding-left: 100px;
+		}
+
+		#work_done {
+			padding-left: 100px;
+		}
+
+
+/* MODAL IMAGE */
+
+
+		.modal {
+			  display: none;
+			  position: fixed;
+			  z-index: 1;
+			  padding-top: 100px;
+			  left: 0;
+			  top: 0;
+			  width: 100%;
+			  height: 100%;
+			  overflow: auto;
+			  background-color: rgb(0, 0, 0);
+			  background-color: rgba(0, 0, 0, 0.9);
+
+		}
+
+
+		.modal-content {
+		  margin: auto;
+		  display: block;
+		  width: 80%;
+		  max-width: 700px;
+		}
+
+		@keyframes zoom {
+		  from {
+		    transform: scale(0)
+		  }
+		  to {
+		    transform: scale(1)
+		  }
+		}
+
+		.close {
+		  position: absolute;
+		  top: 15px;
+		  right: 35px;
+		  color: #f1f1f1;
+		  font-size: 40px;
+		  font-weight: bold;
+		  transition: 0.3s;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: #bbb;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+
+		@media only screen and (max-width: 700px) {
+		  .modal-content {
+		    width: 100%;
+		  }
+		}
+
+
+	</style>
+</head>
+	<body>
+
+		<div class="card" id="team_work">
+			<div class="card_header">
+				<div class="circle"> 
+					<div class="card_circle">15</div>
+		  			<div class="header_top_border" />
+		  		</div>
+		  			 
+		  		<div class="card_title">TEAM WORK</div>
+		 	 </div>
+		 	 <div class="card_content">
+		 	 	<div class="team_list">
+				    <ul style="list-style: none;">
+				    	<li>Chiara Russo</li>
+				    	<li>Irene De Caro</li>
+				    	<li>Sara Forte</li>
+				    	<li>Ivan Smedile</li>
+				    	<li>Chiara Russo</li>
+				    	<li>Irene De Caro</li>
+				    	<li>Sara Forte</li>
+				    	<li>Ivan Smedile</li>
+				    	<li>Irene De Caro</li>
+				    </ul>
+				</div>
+			 </div>
+		</div>
+			  
+		<div class="card" id="work_in_progress">
+			<div class="card_header">
+				<div class="circle"> 
+					<div class="card_circle">11</div>
+		  			<div class="header_top_border" />		
+		  		</div>
+		  			 
+		  		<div class="card_title">WORK IN PROGRESS</div>
+		 	 </div>
+		 	 <div class="card_content">
+			   <div class="gallery">
+
+			   		<div class="gallery_entry">
+			   			<h4>Concept</h4>
+			   			<div class= "images_board">
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/04/23/19/57/yorkshire-terrier-6202621_1280.jpg"/>
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/04/29/19/56/woman-6217377_1280.jpg"/>
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/09/12/17/43/parrot-feathers-6619082_1280.jpg"/>
+			   			</div>
+			   		</div>
+
+			   		<div class="gallery_entry">
+			   			<h4>Design</h4>
+			   			<div class= "images_board">
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/08/02/19/22/temple-of-hercules-6517635_1280.jpg"/>
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/08/23/08/05/triangles-6567058_1280.png"/>
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2017/07/15/19/13/hotel-2507432_1280.jpg"/>
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2020/09/01/21/03/sunset-5536777_1280.jpg"/>
+			   			</div>
+			   		</div>
+
+			   		<div class="gallery_entry">
+			   			<h4>Story</h4>
+			   			<div class= "images_board">
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/01/28/10/36/dragonfly-5957597_1280.jpg"/>
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/09/11/13/08/flowers-6615587_1280.jpg"/>
+			   			</div>
+			   		</div>
+
+			   		<div class="gallery_entry">
+			   			<h4>Concept</h4>
+			   			<div class= "images_board">
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2017/06/03/01/15/bike-2367705_1280.jpg"/>
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/08/06/21/25/woman-6527238_1280.jpg"/>
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/03/06/12/27/apples-6073599_1280.jpg"/>
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/07/19/15/47/lily-6478427_1280.jpg"/>
+			   			</div>
+			   		</div>
+
+
+			   </div>
+			 </div>
+		</div>
+
+		<div class="card" id="work_done">
+			<div class="card_header">
+				<div class="circle"> 
+					<div class="card_circle">4</div>
+		  			<div class="header_top_border" />		
+		  		</div>
+		  			 
+		  		<div class="card_title">WORK DONE</div>
+		 	 </div>
+		 	 <div class="card_content">
+			   <div class="gallery">
+
+			   		<div class="gallery_entry">
+			   			<h4>Character Design</h4>
+			   			<div class= "images_board">
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/08/07/08/49/building-6528075_1280.jpg"/>
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2020/01/01/18/13/train-4734126_1280.jpg"/>
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/08/19/12/53/bremen-6557996_1280.jpg"/>
+			   			</div>
+			   		</div>
+
+			   		<div class="gallery_entry">
+			   			<h4>Logo</h4>
+			   			<div class= "images_board">
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/08/13/07/11/siamese-fighting-fish-6542427_1280.jpg"/>
+			   				<img class="modal_img" src="https://cdn.pixabay.com/photo/2021/08/26/12/51/bridge-6576027_1280.jpg"/>
+			   			</div>
+			   		</div>
+
+	
+
+			   </div>
+			 </div>
+		</div>
+
+		<div id="myModal" class="modal">
+
+  			<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+			<img class="modal-content" id="img01">
+
+
+		</div>
+
+		<script type="text/javascript">
+			
+
+			var modal = document.getElementById('myModal');
+			var images = document.getElementsByClassName('modal_img');
+			var modalImg = document.getElementById("img01");
+
+			for (var i = 0; i < images.length; i++) {
+			  var img = images[i];
+
+			  img.onclick = function(evt) {
+			    modal.style.display = "block";
+			    modalImg.src = this.src;
+			  }
+			}
+
+			var span = document.getElementsByClassName("close")[0];
+
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+
+
+		</script>
+
+	</body>
+</html>
