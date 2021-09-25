@@ -1,0 +1,50 @@
+#home-hero{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ), url('../img/home-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body{
+    background-color: #f5f5f5;
+}
+.main-bg{
+    background-color: #ffffffaa;
+}
+h1{
+    font-family: 'Montserrat';
+    font-size: 4rem;
+}
+h2{
+    font-family: 'Montserrat';
+}
+.bg-green{
+    background-color: #88c87b;
+}
+.bg-cyan{
+    background-color: #80c3d2;
+}
+.bg-yellow{
+    background-color: #ffd600;
+}
+.bg-orange{
+    background-color: #ff8454;
+}
+.text-green{
+    color: #88c87b;
+}
+.text-cyan{
+    color: #80c3d2;
+}
+.text-yellow{
+    color: #ffd600;
+}
+.text-orange{
+    color: #ff8454;
+}
+
+/* TEXT WHITE -> 50 gray */
+/* TEXT BLACK -> 800 gray */
