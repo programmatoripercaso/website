@@ -27,7 +27,7 @@ var stylesheets = [
     	foglio_stile: "stile_carolina_alessi/stile_alternativo.css", 
     	logo: "stile_carolina_alessi/Logo_neg.png", 
     	logoFooter: "stile_carolina_alessi/Logo_neg_ext.png",
-    	fonte: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    	fonte: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap""
     },
     {
     	foglio_stile: "stile_martina_migliore/stile_alternativo.css", 
@@ -52,6 +52,13 @@ var stylesheets = [
         logo:"stile_musella_giuseppe/programmatori per caso musella giuseppe 3.png", 
         logoFooter: "stile_musella_giuseppe/logo footer musella giuseppe programmatori per caso.png",
         fonte: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    },
+	 {
+    	foglio_stile: "stile_marcello_mastrocola/stile_marcello_mastrocola.css", 
+    	logo: "template_stile_alternativo/Logo_Green_neg.png", 
+    	logoFooter: "template_stile_alternativo/Logo_Green_neg_ext.png"
+	fonte: "https://fonts.googleapis.com/css?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+
     },
     // aggiungere qui sopra dopo la virgola la configurazione del nuovo stile
 ]
