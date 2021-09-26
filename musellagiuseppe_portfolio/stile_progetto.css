@@ -94,6 +94,7 @@ h2 {
     width: 200px;
     margin: 20px;
     border-radius: var(--bordo);
+    border: 3px solid coral;
 }
 
 .riga {
