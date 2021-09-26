@@ -57,8 +57,6 @@ var stylesheets = [
     	foglio_stile: "stile_marcello_mastrocola/stile_alternativo.css", 
     	logo: "template_stile_alternativo/Logo_Green_neg.png", 
     	logoFooter: "template_stile_alternativo/Logo_Green_neg_ext.png"
-	fonte: "https://fonts.googleapis.com/css?family=Montserrat:wght@400"
-
     },
     // aggiungere qui sopra dopo la virgola la configurazione del nuovo stile
 ]
