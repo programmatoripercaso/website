@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS specifico del progetto */
+@import url(//db.onlinewebfonts.com/c/3401324718dca681f4f775f3ce244e32?family=Lavanderia+Regular);
+
+:root {
+    --fondochiaro: #023373;
+    --tonomedio: #034AA6;
+    --contrasto: #a52a2a;
+    --fondoscuro: #011C40;
+    --nero: #212121;
+    --bianco: #e4e5e0;
+    --pulsante: #fcf5e7;
+    --caramello: #ffe1c6;
+    --rosa: #e5989b;
+    
+    --bordo: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Tahoma, Verdana, Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    text-decoration: none;
+    font-family: 'Lavanderia Sturdy';
+    font-style: normal;
+    font-weight: normal;
+    font-size:2em;
+    margin:0;
+}
+
+h3 {
+    color: var(--contrasto);
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    margin:0;
+}
+
+a {
+    color: var(--pulsante);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    color: var(--bianco);
+    background-color: var(--caramello);
+    padding: 2.5em 5%;
+}
+
+main {
+    text-align: center;
+    margin: 3em auto;
+}
+
+footer {
+    color: var(--bianco);
+    background-color: var(--rosa);
+    padding: 1em 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+	margin-left: 3em;
+}
+
+#nome-progetto {
+    color: var(--contrasto);
+    margin-top: 0.5em;
+}
+
+p#about-interno {    
+    color: var(--contrasto);
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto;
+    line-height: 1.5em;
+}
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size:1.5em;
+    margin-bottom: 25px;
+}
+
+.mockup>img {
+    width: 250px;
+    margin: 20px;
+    border-radius: var(--bordo);
+}
+
+.icon{
+    margin: 25px;
+}
+.icon a {
+  color: var(--nero);
+  font-size:35px;
+  margin-right:30px;
+}
+
+.riga {
+    margin: 20px auto;
+}
+
+p#testo-interno {
+    max-width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto 0 auto;
+    line-height: 1.5em;
+}
+
+#link-progetto {
+    border-radius: var(--bordo);
+    background-color: var(--pulsante);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 3px;
+    border: 1px solid var(--pulsante);
+    padding: 1em 1.5em;
+    color: var(--contrasto);
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1em auto;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+#link-progetto:hover {
+    border: 1px solid var(--rosa);
+    border-radius: var(--bordo);
+    background-color: var(--rosa);
+    color: var(--pulsante);
+}
+
+@media screen and (min-width: 800px) {
+    h1 {font-size: 3em;}
+}
