@@ -1,7 +1,6 @@
 @charset "utf-8";
-/* CSS specifico del progetto */
-@import url(//db.onlinewebfonts.com/c/3401324718dca681f4f775f3ce244e32?family=Lavanderia+Regular);
 
+/* CSS specifico del progetto */
 :root {
     --fondochiaro: #023373;
     --tonomedio: #034AA6;
@@ -25,13 +24,14 @@ body {
     margin: 0;
 }
 
-h1 {
-    text-decoration: none;
-    font-family: 'Lavanderia Sturdy';
-    font-style: normal;
-    font-weight: normal;
-    font-size:2em;
-    margin:0;
+header img {
+    display: block;
+    max-width: 24rem;
+    margin:auto;
+}
+
+#logo{
+    margin-top: 2.5rem;
 }
 
 h3 {
