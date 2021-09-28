@@ -25,7 +25,6 @@ body {
 }
 
 header img {
-    display: block;
     max-width: 24rem;
     margin:auto;
 }
@@ -96,7 +95,8 @@ h2 {
 }
 
 .mockup>img {
-    width: 250px;
+    width: 50%;
+    max-width: 250px;
     margin: 20px;
     border-radius: var(--bordo);
 }
@@ -146,4 +146,5 @@ p#testo-interno {
 
 @media screen and (min-width: 800px) {
     h1 {font-size: 3em;}
+    .mockup>img {width: 22%;}
 }
