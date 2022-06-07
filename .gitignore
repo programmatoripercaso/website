@@ -1,2 +1,6 @@
 **/.DS_Store
 Configuration.json
+index.pck
+index.wasm
+sweetnest.exe.pck
+sweetnest.exe.wasm
