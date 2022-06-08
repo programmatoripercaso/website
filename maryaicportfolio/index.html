@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<html>
+<style>
+/* CSS specifico del progetto */
+:root {
+    --contrasto: red;
+    --nero: #212121;
+    --pulsante: #ffffff;
+    --grscuro: #212529;
+    --azzurro: #00E1FF;
+	--bianco: #ffffff;
+    --bordo: 10px;
+	--grchiaro: #292E33;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Outfit Regular, Tahoma, Verdana, Arial, sans-serif;
+    margin: 0;
+	background-color: var(--grchiaro);
+}
+
+header img {
+    max-width: 24rem;
+    margin:auto;
+}
+
+#logo{
+    margin-top: 2.5rem;
+}
+
+h3 {
+    color: var(--bianco);
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    margin:0;
+}
+
+a {
+    color: var(--pulsante);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    color: var(--bianco);
+    background-color: var(--grscuro);
+    padding: 2.5em 5%;
+}
+
+main {
+    text-align: center;
+    margin: 3em auto;
+}
+
+footer {
+    color: var(--bianco);
+    background-color: var(--grscuro);
+    padding: 1em 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+	margin-left: 3em;
+}
+
+#nome-progetto {
+    color: var(--bianco);
+    margin-top: 0.5em;
+}
+
+p#about-interno {    
+    color: var(--bianco);
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto;
+    line-height: 1.5em;
+}
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size:1.5em;
+    margin-bottom: 25px;
+}
+
+.mockup>img {
+    width: 50%;
+    max-width: 250px;
+    margin: 20px;
+    border-radius: var(--bordo);
+}
+
+.icon{
+    margin: 25px;
+}
+.icon a {
+  color: var(--bianco);
+  font-size:35px;
+  margin-right:30px;
+}
+
+.riga {
+    margin: 20px auto;
+}
+
+p#testo-interno {
+    max-width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto 0 auto;
+    line-height: 1.5em;
+}
+
+#link-progetto {
+    border-radius: var(--bordo);
+    background-color: var(--pulsante);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 3px;
+    border: 1px solid var(--pulsante);
+    padding: 1em 1.5em;
+    color: var(--nero);
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1em auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#link-progetto:hover {
+    border: 1px solid var(--azzurro);
+    border-radius: var(--bordo);
+    background-color: var(--azzurro);
+    color: var(--pulsante);
+}
+
+@media screen and (min-width: 800px) {
+    h1 {font-size: 3em;}
+    .mockup>img {width: 22%;}
+}
+</style>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Programmatori per caso</title>
+  </head>
+  <body>
+    <header>
+      <img src="https://res.cloudinary.com/dtqx8y3n5/image/upload/v1654703171/IMG_6143_rnag0z.png" height="250em" alt="MaryAIC icona">
+      <div id="logo"><img src="https://res.cloudinary.com/dtqx8y3n5/image/upload/v1654703025/portfolio_titolo_wpkcew.png" width="90%" alt="Portfolio"></div>
+      <p id="about-interno">Maria Rosaria Martusciello</p>
+
+      <a href="https://maryrmartu.github.io/index.html">
+        <button id="link-progetto">Visita il progetto</button>
+      </a>
+    </header>
+
+    <main>
+      <section class="mockup">
+                <img src="https://res.cloudinary.com/dtqx8y3n5/image/upload/v1654703509/IMG_6145_vkfxhc.png" />
+				<img src="https://res.cloudinary.com/dtqx8y3n5/image/upload/v1654703499/IMG_6144_csq0pl.png" />
+        <img src="https://res.cloudinary.com/dtqx8y3n5/image/upload/v1654703515/IMG_6146_sdwlof.png" />
+		<img src="https://res.cloudinary.com/dtqx8y3n5/image/upload/v1654708941/IMG_6147_rssaxm.png" />
+      </section>
+      <font color="white"><p id="testo">
+        Ciao! Sono Maria Rosaria Martusciello, e tu sei arrivato sul mio portfolio!<br/>
+        <b>Mary AIC</b> è il nome che uso online per firmarmi.
+ 
+       <br><br/> Sono uno studentessa dell'Accademia delle Belle Arti di Napoli.<br/>
+<br>Mi piace passare la maggior parte del mio tempo libero lavorando al mio progetto personale<br/> 
+Cronache della sepiolite e fare fanart dei personaggi che più amo, <br/>
+e questo portfolio più che essere per scopo lavorativo, <br/>
+è più una raccolta di quelli che reputo i miei lavori migliori. <br/>
+Buona permanenza sul sito!<br/>
+      </p></font>
+
+      <div class="icon">
+        <a href="https://www.instagram.com/mary.aic/"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="https://www.twitch.tv/maryaic"
+          ><i class="fa fa-twitch"></i
+        ></a>
+        <a href="https://twitter.com/maryaic_"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a style="margin-right: 0" href="https://www.youtube.com/channel/UCvONVuZQNfVJ6eh5Xf25_Og"
+          ><i class="fa fa-youtube-play"></i
+        ></a>
+      </div>
+    </main>
+
+    <footer>
+      <a href="https://www.programmatoripercaso.it/"
+        ><div id="logo-titolo">
+          <img
+            src="https://res.cloudinary.com/dtqx8y3n5/image/upload/v1654707079/programmatoripercasologo2_rgknkg.png"
+            height="30em"
+            alt="Logo esteso PPC"
+          /></div
+      ></a>
+      <nav>
+        <a href="https://www.programmatoripercaso.it/">Home</a>
+        <a href="info.html">Info</a>
+      </nav>
+    </footer>
+  </body>
+</html>
