@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="Icons/favicon.ico" />
+<title>Doozie</title>
+</head>
+<body>
+
+<div id="myNav" class="MenuLaterale">
+	<div class="MenuLateraleGrid">
+		<div class="item1"><button onclick="nav();" id="closeNav">&#10005;</button></div>
+		<div class="item2"></div>
+		<div class="item3" onclick="closeNav()"><a href="#ChiSiamo">Chi siamo</a></div>
+		<div class="item4" onclick="closeNav()"><a href="#Clienti">Casi studio</a></div>
+		<div class="item5"><a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Linkedin</a></div>
+		<div class="item6" onclick="closeNav()"><a href="#Contattaci">Contatti</a></div>
+	 </div>
+</div>
+
+
+	<div class="Header" id="Header">
+		<div></div>
+		<h1>Doozie</h1>
+		<div style="margin-top: 3%">
+			<img onclick="nav()" style="text-align: right; display: inline-block; cursor: pointer;" src="Icons/menu1.png">
+		</div>
+	</div>
+		
+	<div class="Home">
+		<div class="Element" style="margin-top: 25vh">
+		<object id="icona" data="Icons/faccina1.svg" width="200px" height="200px"> </object>
+		</div>
+
+		<div class="Element">
+			<object data="Icons/ombra.svg" width="250px" height="23px"> </object>
+		</div>
+	
+		<div class="Element">
+			<p style="color: #FFFFFF;">Siamo una Digital Agency e siamo Designer, o almeno così ci definiscono. Dai uno sguardo in giro se ti va e interagisci con noi, e quando vuoi cambia il mood del nostro avatar con il bottone quaggiù. Per saperne di più <a href="#TDF" style="text-decoration: none; color: #FFFFFF;"><b>premi qui</b></a> o segui giù.</p>
+		</div>
+	
+		<div id="TDF" class="Element">
+			<button class="Button" onclick="changeIcon()">Choose your mood</button>
+		</div>
+	</div>
+	
+	<div class="PulsanteFlottante">
+		<a href="landing.html"><img src="Icons/pulsanteflottante.png" height="50px" width="50px"></a>
+	</div>
+	
+	<div class="GridContainer">
+		<div class="GridElement1"><h1>True Digital Feelings.</h1></div>
+		<div class="GridElement2"></div>
+		<div class="GridElement3">
+			<p style="width: 72%">Miglioriamo la tua reputazione muovendoci tra i linguaggi in modo sempre nuovo, promuovendo il tuo brand grazie ad un giusto mix in cui media relations, digital marketing, graphic design ed eventi lavorano insieme per raggiungere i tuoi obiettivi di comunicazione.</p>
+			<p style="color: #3A86FF"><b>Rendi i tuoi sentimenti digitali reali!</b></p>
+		</div>
+		<div class="GridElement456">
+			<h3>Brand Reputation</h3>
+			<img onclick="showParagraph1()"  id="frecciagiu1" src="Icons/frecciagiu.png">
+			<p id="paragraph1">Ti aiuteremo a capire la strategia migliore per far crescere la reputazione della tua azienda. Sceglieremo le attività su misura per valorizzare al meglio quello che fai attraverso stampa, digitale e grafica.</p>
+		</div>
+		<div class="GridElement456">
+			<h3>Social Media Strategy</h3>
+			<img onclick="showParagraph2()" id="frecciagiu2" src="Icons/frecciagiu.png">
+			<p id="paragraph2">Una buona strategia digitale non è fatta solo di social media e piani editoriali. &Egrave; osservazione e ascolto. &Egrave; creatività e pianificazione. Ma soprattutto è racconto: metti da parte la tua timidezza e mostra il tuo brand al popolo dell'internet!</p>
+		</div>
+		<div class="GridElement456">
+			<h3>Visual Design</h3>
+			<img onclick="showParagraph3()" id="frecciagiu3" src="Icons/frecciagiu.png">
+			<p id="paragraph3">Ti ascoltiamo, studiamo quello che fai e disegniamo con te la tua identità. Perchè l'immagine è importante e, attraverso la grafica, puoi raccontare la tua storia e condividere i tuoi valori con chi ti segue!</p>
+		</div>
+	</div>
+	
+	<div class="GridContainer2" id="ChiSiamo">
+		<div class="GridElement2_1" style = "margin-top:5%; padding-top:2%;"><h1>Chi siamo</h1></div>
+		<div class="GridElement2_2345"><img src="Icons/memoji1.png" style="width:95%"></div>
+		<div class="GridElement2_2345"><img src="Icons/memoji2.png" style="width:95%"></div>
+		<div class="GridElement2_2345"><img src="Icons/memoji3.png" style="width:95%"></div>
+		<div class="GridElement2_2345"><img src="Icons/memoji4.png" style="width:95%"></div>
+		<div class="GridElement2_6789">
+			<h3>Angelo De Geronimo</h3>
+			<img onclick="showParagraph4()"  id="frecciagiu4" src="Icons/frecciagiu.png">
+			<p id="paragraph4">22 anni. Studente presso l'Accademia di Belle Arti di Napoli, si occupa in particolar modo di Logo Design.</p>
+			<div id="proContro4">
+					<p id="proTitolo4"> Pro </p>
+					<p id="controTitolo4"> Contro </p>
+					<p id="pro4"> Fa abuso </p>
+					<p id="contro4"> Dipendente da caffè </p>
+			</div>
+		</div>
+		<div class="GridElement2_6789">
+			<h3>Grazia Ferraro</h3>
+			<img onclick="showParagraph5()"  id="frecciagiu5" src="Icons/frecciagiu.png">
+			<p id="paragraph5">21 anni. Studentessa presso l'Accademia di Belle Arti di Napoli, si occupa in particolar modo di impaginazione ed editoria.</p>
+			<div id="proContro5">
+					<p id="proTitolo5"> Pro </p>
+					<p id="controTitolo5"> Contro </p>
+					<p id="pro5"> Ha tutto sott’occhio </p>
+					<p id="contro5"> Senza occhiali non vede niente </p>
+			</div>
+		</div>
+		<div class="GridElement2_6789">
+			<h3>Luca De Biasi</h3>
+			<img onclick="showParagraph6()"  id="frecciagiu6" src="Icons/frecciagiu.png">
+			<p id="paragraph6">23 anni. Studente presso l'Accademia di Belle Arti di Napoli, si occupa in particolar modo di CopyWriting.</p>
+			<div id="proContro6">
+					<p id="proTitolo6"> Pro </p>
+					<p id="controTitolo6"> Contro </p>
+					<p id="pro6"> Tanta creatività </p>
+					<p id="contro6"> Non passa tra le porte </p>
+			</div>
+		</div>
+		<div class="GridElement2_6789">
+			<h3>Rebecca Buonamico</h3>
+			<img onclick="showParagraph7()"  id="frecciagiu7" src="Icons/frecciagiu.png">
+			<p id="paragraph7">22 anni. Studentessa presso l'Accademia di Belle Arti di Napoli, si occupa in particolar modo di Brand Identity.</p>
+			<div id="proContro7">
+					<p id="proTitolo7"> Pro </p>
+					<p id="controTitolo7"> Contro </p>
+					<p id="pro7"> &Egrave; sempre illuminata </p>
+					<p id="contro7"> Non può esporsi al sole </p>
+			</div>
+		</div>
+		<div class="GridElement2_10"></div>
+		<div class="GridElement2_11">
+				<p style="width: 72%">La nostra Digital Agency nasce dalla volontà di creare una realtà affermata nel mondo della comunicazione. Ci occupiamo di creare dei percorsi di digitalizzazione e potenziamento attraverso progetti comunicativi e di Adv, utilizzando a seconda del contesto i social più indicati.</p>
+		</div>
+	</div>
+	
+	<div class="GridContainer3" id="Clienti">
+		<div class="GridElement3_1" style = "margin-top:5%; padding-top:2%;"><h1>Casi Studio</h1></div>
+		<div class="GridElement3_2"><p>Clienti</p></div>
+		<div class="GridElement3_3">
+			<p style="width: 72%">Lavoriamo a stretto contatto con la nostra clientela accompagnandoli passo passo durante tutto il percorso di creazione. Dalla nascita dell’idea fino alla soddisfazione delle loro richieste. 
+				Non abbiamo pregiudizi, siamo aperti a collaborazioni con le più svariate tipologie di clientela.
+			</p>
+		</div>
+		<div class="GridElement3_4567"><img src="Icons/cliente1.png" style="width:95%"></div>
+		<div class="GridElement3_4567"><img src="Icons/cliente2.png" style="width:95%"></div>
+		<div class="GridElement3_4567"><img src="Icons/cliente3.png" style="width:95%"></div>
+		<div class="GridElement3_4567"><img src="Icons/cliente4.png" style="width:95%"></div>
+	</div>
+	
+	<div class="GridContainer3" id="Lavori">
+		<div class="GridElement3_1" style = "margin-top:5%; padding-top:2%;"></div>
+		<div class="GridElement3_2"><p>Lavori</p></div>
+		<div class="GridElement3_3">
+			<p style="width: 72%">Ci occupiamo di progetti medio-grandi in cui si pone risalto sulle fasi di consulenza per analisi dei requisiti, progettazione e Quality Assurance al fine di stabilire delle linee guida atte a completare ogni progetto con puntualità e con soddisfazione dei clienti.</p>
+		</div>
+		<div class="GridElement3_4567"><img src="Icons/lavoro1.png" style="width:95%"></div>
+		<div class="GridElement3_4567"><img src="Icons/lavoro2.png" style="width:95%"></div>
+		<div class="GridElement3_4567"><img src="Icons/lavoro2b.png" style="width:95%"></div>
+		<div class="GridElement3_4567"><img src="Icons/lavoro3.png" style="width:95%"></div>
+		<div class="GridElement3_8"><button id="showMoreButton" class="Button" onclick="showMoreWorks()">Load more...</button></div>
+		<div class="GridElement3_4567s"><img src="Icons/lavoro4.png" style="width:95%"></div>
+		<div class="GridElement3_4567s"><img src="Icons/lavoro5.png" style="width:95%"></div>
+		<div class="GridElement3_4567s"><img src="Icons/lavoro6.png" style="width:95%"></div>
+		<div class="GridElement3_4567s"><img src="Icons/lavoro7.png" style="width:95%"></div>
+	</div>
+	
+	<div class="GridContattaci" id="Contattaci">
+		<div style="margin-top:40%">
+			<form>
+				<h1>Contattaci</h1>
+				<input type="text" placeholder="Nome & Cognome"><br>
+				<input type="email" placeholder="Email"><br>
+				<textarea placeholder="Messaggio"></textarea><br>
+				<input id="PulsanteForm" type="submit" value="Invia" onclick="alertSubmit()">
+			</form>
+		</div>
+		<div>
+		<iframe class="Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3017.926345402248!2d14.24924821574134!3d40.85154087931704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b0842b70f61b3%3A0x2a7a7666e01ada5f!2sAccademia%20delle%20Belle%20Arti!5e0!3m2!1sit!2sit!4v1654814173894!5m2!1sit!2sit" width="70%" height="70%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>		</div>
+	</div>
+	
+	<div class="Footer">
+		<div class="SocialButtons">
+			<img class="SocialButton" src="Icons/facebook.png" width="18px" height="30px">
+			<img class="SocialButton" src="Icons/Instagram.png" width="30px" height="30px">
+			<img class="SocialButton" src="Icons/Whatsapp.png" width="30px" height="30px">
+			<img class="SocialButton" src="Icons/Linkedin.png" width="30px" height="30px">
+		</div>
+		<object id="IconaFooter" onmouseover="changeFooterIcon()" data="Icons/faccina1.svg" width="100px" height="100px"> </object>
+		<p>&copy; Copyright 2022 | Doozie - True Digital Feelings</p>
+	</div>
+	
+
+</body>
+
+<script type="text/javascript">
+	numberIcon=1;
+	open=false;
+	paragraph1Open=false;
+	paragraph2Open=false;
+	paragraph3Open=false;
+	paragraph4Open=false;
+	paragraph5Open=false;
+	paragraph6Open=false;
+	paragraph7Open=false;
+	var fixId, fixTop;
+	numberFooterIcon=1;
+
+	
+	changeIcon = function() {
+		if(numberIcon==4) numberIcon=1;
+		else numberIcon++;
+		
+		nuovaIcona = "Icons/faccina"+ (numberIcon) +".svg";
+		document.querySelector("#icona").data=nuovaIcona;
+		document.querySelector("#icona").className = null;
+		document.querySelector("#icona").className = "animazioneIcona";
+	}
+	
+	nav = function() {
+		if(open) {
+			closeNav();
+			open = false;
+		}
+		else {
+			openNav();
+			open = true;
+		}
+	}
+	
+	openNav = function() {
+		 document.getElementById("myNav").style.width = "100%";
+		 coll = document.getElementsByClassName("overlay-content");
+		 for (let element of coll) {
+			    element.style.display="grid";
+			}
+	}
+	
+	closeNav = function() {
+		 document.getElementById("myNav").style.width = "0%";
+		 coll = document.getElementsByClassName("overlay-content");
+		 for (let element of coll) {
+			    element.style.display="none";
+			}
+	}
+	
+	
+	showParagraph1 = function() {
+		if (paragraph1Open) {
+			document.getElementById("paragraph1").style.display = "none";
+			document.querySelector("#frecciagiu1").src = "Icons/frecciagiu.png";
+			paragraph1Open = false;
+		} else {
+			document.getElementById("paragraph1").style.display = "block";
+			document.querySelector("#frecciagiu1").src = "Icons/frecciasu.png";
+			paragraph1Open = true;
+		}
+	}
+	
+	showParagraph2 = function() {
+		if (paragraph2Open) {
+			document.getElementById("paragraph2").style.display = "none";
+			document.querySelector("#frecciagiu2").src = "Icons/frecciagiu.png";
+			paragraph2Open = false;
+		} else {
+			document.getElementById("paragraph2").style.display = "block";
+			document.querySelector("#frecciagiu2").src = "Icons/frecciasu.png";
+			paragraph2Open = true;
+		}
+	}
+	
+	showParagraph3 = function() {
+		if (paragraph3Open) {
+			document.getElementById("paragraph3").style.display = "none";
+			document.querySelector("#frecciagiu3").src = "Icons/frecciagiu.png";
+			paragraph3Open = false;
+		} else {
+			document.getElementById("paragraph3").style.display = "block";
+			document.querySelector("#frecciagiu3").src = "Icons/frecciasu.png";
+			paragraph3Open = true;
+		}	
+	}
+	
+	showParagraph4 = function() {
+		if (paragraph4Open) {
+			document.getElementById("paragraph4").style.display = "none";
+			document.getElementById("pro4").style.display = "none";
+			document.getElementById("contro4").style.display = "none";
+			document.getElementById("proTitolo4").style.display = "none";
+			document.getElementById("controTitolo4").style.display = "none";
+			document.querySelector("#frecciagiu4").src = "Icons/frecciagiu.png";
+			paragraph4Open = false;
+		} else {
+			document.getElementById("paragraph4").style.display = "block";
+			document.getElementById("pro4").style.display = "block";
+			document.getElementById("contro4").style.display = "block";
+			document.getElementById("proTitolo4").style.display = "block";
+			document.getElementById("controTitolo4").style.display = "block";
+			document.querySelector("#frecciagiu4").src = "Icons/frecciasu.png";
+			paragraph4Open = true;
+		}	
+	}
+	
+	showParagraph5 = function() {
+		if (paragraph5Open) {
+			document.getElementById("paragraph5").style.display = "none";
+			document.getElementById("pro5").style.display = "none";
+			document.getElementById("contro5").style.display = "none";
+			document.getElementById("proTitolo5").style.display = "none";
+			document.getElementById("controTitolo5").style.display = "none";
+			document.querySelector("#frecciagiu5").src = "Icons/frecciagiu.png";
+			paragraph5Open = false;
+		} else {
+			document.getElementById("paragraph5").style.display = "block";
+			document.getElementById("pro5").style.display = "block";
+			document.getElementById("contro5").style.display = "block";
+			document.getElementById("proTitolo5").style.display = "block";
+			document.getElementById("controTitolo5").style.display = "block";
+			document.querySelector("#frecciagiu5").src = "Icons/frecciasu.png";
+			paragraph5Open = true;
+		}	
+	}
+	
+	showParagraph6 = function() {
+		if (paragraph6Open) {
+			document.getElementById("paragraph6").style.display = "none";
+			document.getElementById("pro6").style.display = "none";
+			document.getElementById("contro6").style.display = "none";
+			document.getElementById("proTitolo6").style.display = "none";
+			document.getElementById("controTitolo6").style.display = "none";
+			document.querySelector("#frecciagiu6").src = "Icons/frecciagiu.png";
+			paragraph6Open = false;
+		} else {
+			document.getElementById("paragraph6").style.display = "block";
+			document.getElementById("pro6").style.display = "block";
+			document.getElementById("contro6").style.display = "block";
+			document.getElementById("proTitolo6").style.display = "block";
+			document.getElementById("controTitolo6").style.display = "block";
+			document.querySelector("#frecciagiu6").src = "Icons/frecciasu.png";
+			paragraph6Open = true;
+		}	
+	}
+	
+	showParagraph7 = function() {
+		if (paragraph7Open) {
+			document.getElementById("paragraph7").style.display = "none";
+			document.getElementById("pro7").style.display = "none";
+			document.getElementById("contro7").style.display = "none";
+			document.getElementById("proTitolo7").style.display = "none";
+			document.getElementById("controTitolo7").style.display = "none";
+			document.querySelector("#frecciagiu7").src = "Icons/frecciagiu.png";
+			paragraph7Open = false;
+		} else {
+			document.getElementById("paragraph7").style.display = "block";
+			document.getElementById("pro7").style.display = "block";
+			document.getElementById("contro7").style.display = "block";
+			document.getElementById("proTitolo7").style.display = "block";
+			document.getElementById("controTitolo7").style.display = "block";
+			document.querySelector("#frecciagiu7").src = "Icons/frecciasu.png";
+			paragraph7Open = true;
+		}	
+	}
+	
+	window.onload = function() { 
+		  fixId = document.getElementById("Header");
+		  fixTop = window.screen.availHeight-document.getElementById("Header").clientHeight*2+100;
+	}
+		
+	window.onscroll = function() { 
+		  with (fixId.style) {
+		    if (window.pageYOffset > fixTop) {
+		      height = "10vh";
+		    } else {
+		     height = "15vh";
+		    }
+		  }
+		}
+	
+	alertSubmit = function() {
+		window.alert("La tua richiesta è stata inoltrata!")
+	}
+	
+	showMoreWorks = function() {
+		document.getElementById("showMoreButton").style.display = "none";
+		collection = document.getElementsByClassName("GridElement3_4567s");
+
+		for ( i = 0; i < collection.length; i++) 
+		  	collection[i].style.display = "block";
+	}
+	
+	changeFooterIcon = function() {
+		if(numberFooterIcon==4) numberFooterIcon=1;
+		else numberFooterIcon++;
+		
+		nuovaIcona = "Icons/faccina"+ (numberFooterIcon) +".svg";
+		document.querySelector("#IconaFooter").data=nuovaIcona;
+	}
+	
+</script>
+</html>

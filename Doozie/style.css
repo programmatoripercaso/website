@@ -1,0 +1,469 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Visby Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Visby Heavy'), url('Font/VisbyHeavy.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Visby Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Visby Medium'), url('Font/VisbyMedium.woff') format('woff');
+    }
+   
+@font-face {
+    font-family: 'Visby Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Visby Semibold'), url('Font/VisbySemibold.woff') format('woff');
+    }
+    
+@font-face {
+    font-family: 'Visby Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Visby Bold'), url('Font/VisbyBold.woff') format('woff');
+    }
+
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+body {
+	background-color: #FFFFFF;
+	font-family: 'Visby Heavy';
+	margin: 0px;
+}
+
+p {
+	color: #000000;
+	font-family: 'Visby Medium';
+	width: 445px;
+    font-size: 14pt;
+    line-height: 20pt;
+}
+
+button {
+	background-color: transparent;
+    border: none;
+}
+
+.Button {
+	background-color: #FFFFFF;
+	border: none;
+	font-family: 'Visby Bold';
+	height: 40px;
+	width: 240px;
+	border-radius: 25px;
+	font-size: 14pt;
+	color: #3A86FF;
+}
+
+.Button:hover {
+	/*background-color: #3C3C3B;*/
+	background-color: #3A86FF;
+	box-shadow: 5px 5px 10px 1px  #3C3C3B;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: .3s ease;
+}
+
+h1 {
+	margin: 0;
+}
+
+h3 {
+	margin-bottom: 4pt;
+}
+
+.Header {
+	display: inline-grid;
+	grid-template-columns: 33% 34% 33%;
+	text-align: center;
+	color: #FFFFFF;
+	width: 100%;
+	height: 15vh;
+	background-color:  #3A86FF;
+	font-size: 16pt;
+	align-content: center;
+	position: fixed;
+	transition: 0.3s;
+	z-index: 1;
+}
+
+.Home {
+	display: grid;
+    background-color: #3A86FF;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.PulsanteFlottante {
+	position: fixed;
+	left: 3%;
+	bottom: 5%;
+	opacity: 50%;
+	cursor: pointer;
+}
+
+.Element {
+	text-align: center;
+}
+
+.animazioneIcona {
+	animation-name: fadeIn;
+	animation-duration: 1s;
+}
+
+#iconaMenu {
+	text-align: right;
+	margin-right: 8%;
+}
+
+.GridContainer {
+	display: grid;
+	grid-template-columns: 33% 34% 33%;
+}
+
+.GridContainer2, .GridContainer3 {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.GridElement1 {
+	grid-column: 1 / span 3;
+    grid-row: 1;
+    color: #3A86FF;
+    font-size: 40pt;
+    padding-left: 3%;
+    margin-bottom: 15px;
+    margin-top: 3%;
+}
+
+.GridElement3 {
+	grid-column: 2 / span 2;
+    grid-row: 2;
+    line-height: 18pt;
+}
+
+.GridElement456 {
+	text-align: center;
+	color: #3A86FF;
+	font-family: 'Visby Medium';
+	font-size: 15pt;
+	margin-top: 90px;
+}
+
+.GridElement456 p, .GridElement6789 p {
+	width: 80%;
+	margin-inline-start: 10%;
+    font-size: 13pt;
+    line-height: 17pt;
+    display: none;
+}
+
+.GridElement2_1, .GridElement3_1 {
+	grid-column: 1 / span 4;
+    grid-row: 1;
+    color: #3A86FF;
+    font-size: 40pt;
+    padding-left: 3%;
+    margin-bottom: 15px;
+}
+
+.GridElement2_2345 p, .GridElement2_6789 p {
+	width: 80%;
+	margin-inline-start: 10%;
+    font-size: 13pt;
+    line-height: 17pt;
+    display: none;
+}
+
+.GridElement2_11 {
+	grid-column: 2 / span 3;
+    grid-row: 4;
+    line-height: 18pt;
+    margin-left: 8%;
+	margin-top: 8%;
+}
+
+.GridElement3_2 p {
+	width: auto;
+	text-align: right;
+    color: #3A86FF;
+    font-size: 20pt;
+    margin-top: 20px;
+    font-family: 'Visby Semibold';
+}
+
+.GridElement3_3 {
+	grid-column: 2 / span 3;
+    grid-row: 2;
+    line-height: 18pt;
+    margin-left: 8%;
+}
+
+.GridElement3_3 p {
+    margin-top: 20px;
+}
+
+#frecciagiu1, #frecciagiu2, #frecciagiu3, #frecciagiu4, #frecciagiu5, #frecciagiu6, #frecciagiu7 {
+	cursor: pointer;
+}
+
+.GridElement3_4567s {
+	display: none;
+}
+
+.GridElement3_8 {
+	grid-column: 1 / span 4;
+    grid-row: 4;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.GridElement3_8 .Button{
+	background-color: #3A86FF;
+	border: none;
+	font-family: 'Visby Bold';
+	height: 40px;
+	width: 240px;
+	border-radius: 25px;
+	font-size: 14pt;
+	color: #FFFFFF;
+}
+
+.GridElement3_8 .Button:hover {
+	background-color: #FFFFFF;
+	box-shadow: 5px 5px 10px 1px  #3C3C3B;
+	color: #3A86FF;
+	cursor: pointer;
+	transition: .3s ease;
+}
+
+.GridElement2_2345, .GridElement2_6789, .GridElement3_4567, .GridElement3_4567s {
+	text-align: center;
+	color: #3A86FF;
+	font-family: 'Visby Medium';
+	font-size: 15pt;
+	margin-top: 30px;
+}
+
+#proContro4, #proContro5, #proContro6, #proContro7 {
+	display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+}
+
+#proTitolo4, #proTitolo5, #proTitolo6, #proTitolo7 {
+	color: #3A86FF;
+	font-size: 15pt;
+	margin-left: 20%;
+	margin-top: 0;
+	margin-bottom: 3%;
+	margin-right: 0;
+}  
+
+#controTitolo4, #controTitolo5, #controTitolo6, #controTitolo7 {
+	color: #3A86FF;
+	font-size: 15pt;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 3%;
+	margin-right: 20%
+}
+
+#pro4, #pro5, #pro6, #pro7 {
+	margin-left: 20%;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 0;
+} 
+
+#contro4, #contro5, #contro6, #contro7 {
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 20%;
+} 
+
+.GridContattaci {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.GridContattaci input {
+    height: 50px;
+    width: 75%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border-radius: 10px;
+    border-color: #3A86FF;
+    border-style: solid;
+    color: #3A86FF;
+    padding-left: 5%;
+    font-family: 'Visby Medium';
+}
+
+.GridContattaci h1 {
+	margin-left: 20%;
+	color: #3A86FF;
+	font-size: 35pt;
+	margin-bottom: 5%;
+}
+
+.GridContattaci textarea {
+    height: 150px;
+    width: 75%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #3A86FF;
+    border-style: solid;
+    color: #3A86FF;
+    padding-left: 5%;
+    font-family: 'Visby Medium';
+    padding-top: 3%;
+}
+
+.GridContattaci .Map {
+	margin-top: 40%;
+	margin-left: 20%
+}
+
+#PulsanteForm {
+	width: 81.2%;
+    text-align: center;
+    background-color: #3A86FF;
+    color: #FFFFFF;
+    font-size: 13pt;
+    padding-left: 0;
+}
+
+#PulsanteForm {
+	cursor: pointer;
+}
+
+.Footer {
+	background-color: #3A86FF;
+	color: #FFFFFF;
+	text-align: center;
+	height: 25%;
+	padding-top: 5vh;
+	margin-top: 15vh;
+}
+
+.Footer p {
+	text-align: center;
+	margin: 0;
+	width: auto;
+	color: #FFFFFF;
+	font-size: 10pt;
+	margin-top: 3%;
+}
+
+.SocialButtons {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	justify-content: center;
+	column-gap: 2%;
+	margin-bottom: 2%;
+}
+
+.SocialButton:hover {
+	cursor: pointer;
+	animation-name: rotation;
+	animation-duration: .3s;
+}
+
+#IconaFooter:hover {
+	animation-name: rotation;
+	animation-duration: .3s;
+}
+
+.MenuLaterale {
+ height: 100%;
+ width: 0;
+ position: fixed;
+ z-index: 2;
+ right: 0;
+ top: 0;
+ background-color: rgb(0,0,0);
+ background-color: rgba(0,0,0, 0.9);
+ overflow-x: hidden;
+ transition: 0.5s;
+}
+
+.MenuLateraleGrid {
+	display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 30vh;
+    height: 60vh;
+    align-items: end;
+}
+
+.MenuLaterale a {
+ text-decoration: none;
+ color: #E5E5E5;
+ transition: 0.3s;
+}
+
+.MenuLaterale a:hover, .MenuLaterale a:focus {
+ color: #3A86FF;
+}
+
+.item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    margin-bottom: 10vh;
+    text-align: right;
+    margin-right: 15%;
+}
+
+.item2 {
+	grid-row: 2 / span 2;
+  	grid-column: 1;
+}
+
+.item5 {
+    justify-self: right;
+    margin-top: auto;
+    font-size: 20px;
+    justify-content: center;
+    margin-right: 12%;
+    margin-bottom: 2%;
+    color: #E5E5E5;
+}
+
+.item3, .item4, .item6 {
+ 	font-size: 50px;
+}
+
+#closeNav {
+	color: #E5E5E5;
+	font-size: 30px;
+}
+
+#closeNav:hover {
+	color: #3A86FF;
+	cursor: pointer;
+}
+
+@keyframes rotation {
+	0% {transform: rotate(180deg);}
+	100% {transform: rotate(0deg);}
+}
+
+.rotazionePulsante {
+	animation-name: rotation;
+	animation-duration: 1s;
+}
