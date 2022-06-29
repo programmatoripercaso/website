@@ -1,0 +1,120 @@
+@charset "utf-8";
+body {
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+}
+header{
+	background-image:url("Homepage.jpg");
+    text-align: center;
+    padding: 5em 5%;
+}
+header h1{
+    text-transform: uppercase;
+    font-size:2em;
+    margin:0;
+}
+.box{
+	margin: 10em;
+}
+#link-progetto {
+	margin:40px;
+	background:none;
+	outline:none;
+	cursor:pointer;
+	padding:10px 20px;
+	border:solid 3px white;
+	border-radius:250px;
+	font-family:'Poppins', sans-serif;
+	font-size:12pt;
+	color:white;
+	text-align:center;
+	text-decoration:none;	
+}
+#link-progetto a:link{
+	text-decoration:none;
+}
+#link-progetto a{
+	 color:white;
+}
+#link-progetto:hover {
+  border: solid 3px #64398e;
+  border-radius: 250px;
+  color: #64398e;
+}
+#nome-progetto {
+	font-family:'Poppins', sans-serif;
+	color:white;
+	font-size: 3.5em;
+}
+p#about-interno {    
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto;
+    line-height: 1.5em;
+	font-family:'Poppins', sans-serif;
+	color:white;
+}
+main {
+    text-align: center;
+    margin: 3em auto;
+}
+p#testo-interno {
+    max-width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto 0 auto;
+    line-height: 1.5em;
+	font-family:'Poppins', sans-serif;
+	color:#64398e;
+}
+.mockup > img {
+    width: 500px;
+    margin: 20px;
+}
+h2#ringraziamenti{
+    max-width: 60%;
+    text-align: center;
+    margin: 1em auto 0 auto;
+    line-height: 1.5em;
+	font-family:'Poppins', sans-serif;
+	color:#64398e;
+}
+.foto > img {
+    width: 200px;
+    margin: 20px;
+}
+footer {
+	background-image:url("Homepage.jpg");
+	padding: 1em 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+	margin-left: 3em;
+	font-family:'Poppins', sans-serif;
+	font-size:11pt;
+	color:white;
+	padding:15px 15px;
+	text-decoration:none;
+}
+nav a:link{
+	text-decoration:none;
+	color:white;
+}
+nav a{
+	margin-left: 3em;
+	color:white;
+}
+nav a:hover{
+	color: #64398e;
+}
+nav:hover{
+	color:#64398E;
+}
+* {
+    box-sizing: border-box;
+}
+@media screen and (min-width: 800px) {
+    h1 {font-size: 3em;}
+}
