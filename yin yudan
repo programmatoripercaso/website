@@ -1,0 +1,102 @@
+<!DOCTYPE >
+<html >
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+  <title>Xia Mu You Ren Zhang</title>
+
+  <link href="css/css.css" rel="stylesheet" type="text/css" />
+  <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+
+  body {
+   background-image: url(img/body.png);
+   background-repeat: repeat;
+ }
+
+</style>
+</head>
+<body >
+  <table width="1280" height="1000" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    <tr>
+      <td align="left" valign="top"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="ziti">
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="49%" align="left" valign="top"><img src="img/logo.png" width="500" height="200" /></td>
+              <td width="51%" align="left" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center"><a href="index.html" class="white3">Homepage</a></td>
+                  <td align="center"><a href="egushijianjie.html" class="white3">story</a></td>
+                  <td align="center"><a href="ejiase.html" class="white3"> introduction</a></td>
+                  <td align="center"><a href="edaoju.html" class="white3">Props</a></td>
+                  <td align="center"><a href="wo.html" class="white3">author</a></td>
+                  <td align="center"><a href="elianxiwo.html" class="white3">contact me</a></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200" align="center" valign="top"><table width="98%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="center"><img src="img/02.jpg" alt="1" width="200" height="200" /></td>
+                </tr>
+                <tr>
+                  <td align="center"><img src="img/03.jpg" alt="1" width="200" height="200" /></td>
+                </tr>
+                <tr>
+                  <td align="center"><img src="img/04.jpg" alt="1" width="200" height="200" /></td>
+                </tr>
+
+              </table></td>
+              <td width="80%" align="left" valign="top">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="left"><p class="wenzi1"><img src="img/daoju.jpg" width="200" height="50" /></p></td>
+                  </tr>
+                  <tr>
+                    <td align="center"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Friends</strong><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;The core prop of the work is the monster contract made by Guizhi's grandmother, xiamu Lingzi. It says the names of all the monsters that Lingzi defeated. The monster whose name is written on the paper can't disobey the call of the friend account holder. If the paper is burned or torn, the monster whose name is written on the paper will die. Therefore, a monster whose name has been taken away is like a monster whose life has been controlled. If he has a friend account, he can lead many monsters. Therefore, a monster whose name has been written down will be eager to get his name back, or like other monsters, he wants to take a friend account to lead the monsters whose name is in the friend account.</td>
+                      </tr>
+                      <tr>
+                        <td align="center"><img src="img/07.JPG" width="701" height="168" /></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;<strong>The way to find the monster's name</strong>：<br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;Think of the monster in your mind and say:  Those who protect me show their names.<br />
+                          &nbsp;<strong>How to give back the monster's name</strong>：<br />
+                          &nbsp;&nbsp;&nbsp;&nbsp;It's got to have Lingzi's saliva and breath, and blood relatives. After tearing off the contract, bite in your mouth, close your hands and concentrate, and exhale instantly. Returning names takes a lot of energy.<br />
+                          &nbsp;<strong>Ways to summon monsters</strong>：<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;Draw the array on the ground, put on the robe (or replace it with white cloth), stand in the middle of the array, put the friend tent and mirror with the monster to be summoned in the middle of the array, drip blood on the mirror (the cat teacher said that originally a nail was needed), and say with both hands' guard me, your name is (you must know the name and appearance of the monster to be summoned).</td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table></td>
+        </tr>
+        
+        <tr>
+          <td align="center"><img src="img/slider-shadow.png" width="920" height="5" /></td>
+        </tr>
+        <tr>
+          <td align="center">&nbsp;</td>
+        </tr>
+      </table></td>
+    </tr>
+  </table width="1280" height="1000" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">>
+  <div class="footer">Xia Mu You Ren Zhang</div>
+</body>
+</html>
