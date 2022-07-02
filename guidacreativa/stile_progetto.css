@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS specifico del progetto */
+
+:root {
+    --fondochiaro: #023373;
+    --tonomedio: #034AA6;
+    --contrasto: #E84545;
+    --fondoscuro: #ffffff;
+    --nero: #212121;
+    --bianco: #e4e5e0;
+    
+    --seserve: #05F2DB;
+    
+    --bordo: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Tahoma, Verdana, Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size:2em;
+    margin:0;
+	color: black;
+}
+
+h3 {
+    color: var(--contrasto);
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    margin:0;
+}
+
+a {
+    color: var(--contrasto);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    color: var(--bianco);
+    background-color: var(--fondoscuro);
+    padding: 5em 5%;
+}
+
+main {
+    text-align: center;
+   
+	background-color: #F62145;
+}
+
+footer {
+    color: var(--bianco);
+    background-color: var(--fondoscuro);
+    padding: 1em 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+	margin-left: 3em;
+}
+
+#nome-progetto {
+    margin-top: 0.5em;
+}
+
+p#about-interno {    
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto;
+    line-height: 1.5em;
+	color: gray;
+}
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size:1.5em;
+    margin-bottom: 25px;
+}
+
+.mockup>img {
+    width: 500px;
+    margin: 20px;
+    border-radius: var(--bordo);
+}
+
+.riga {
+    margin: 20px auto;
+}
+
+p#testo-interno {
+    max-width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 2em auto 2em auto;
+    line-height: 1.5em;
+	color: white;
+}
+
+#link-progetto {
+    border: 0px solid var(--contrasto);
+    border-radius: var(--bordo);
+    background-color: #F62145;
+    padding: 1em 1.5em;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1em auto;
+    cursor: pointer;
+}
+
+#link-progetto:hover {
+	border: solid 3px #F62145;
+	border-radius: var(--bordo);
+	background-color: white;
+	color: #F62145;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {font-size: 3em;}
+}
