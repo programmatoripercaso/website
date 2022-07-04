@@ -103,11 +103,10 @@ h2 {
 }
 
 .mockup>img {
-    width: 60%;
+    width: 300px;
     margin: 20px;
-  
-}
-
+    border-radius: var(--bordo);
+	}	
 
 .riga {
     margin: 20px auto;
@@ -117,7 +116,7 @@ p#testo-interno {
     max-width: 60%;
     text-align: center;
     font-size: 1.2em;
-    margin: 1em auto 0 auto;
+    margin: 2em auto 0 auto;
     line-height: 1.5em;
 }
 
