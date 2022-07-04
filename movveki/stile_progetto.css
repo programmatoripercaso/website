@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS specifico del progetto */
+
+:root {
+    --bordo: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Tahoma, Verdana, Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size:2em;
+    margin:0;
+}
+
+h3 {
+    color: #0025FF;
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    margin:0;
+}
+
+a {
+    color: #0025FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    background: linear-gradient(-45deg, #7fffd4, #00bfff, #7b68ee, #ffa500);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    text-align: center;
+    color: #98ff98;
+    padding: 5em 5%;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+main {
+    text-align: center;
+    margin: 3em auto;
+}
+
+footer {
+    color: #0025FF;
+    background-color: #7b68ee;
+    padding: 1em 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+	margin-left: 3em;
+}
+
+#nome-progetto {
+    margin-top: 0.5em;
+    color: #0025FF;
+}
+
+p#about-interno {    
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto;
+    line-height: 1.5em;
+    color: #0025FF;
+}
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size:1.5em;
+    margin-bottom: 25px;
+    color: #0025FF;
+}
+
+.mockup>img {
+    width: 730px;
+    height: 489,1867px;
+    margin: 20px;
+}
+
+.riga {
+    margin: 20px auto;
+}
+
+p#testo-interno {
+    max-width: 60%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1em auto 0 auto;
+    line-height: 1.5em;
+    color: #0025FF;
+}
+
+#link-progetto {
+    border: 2px none;
+    border-radius: 50%;
+    background-color: #98ff98;
+    padding: 1em 1.5em;
+    color: #0025FF;
+    box-shadow: 0px 0px 10px #98ff98;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1em auto;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {font-size: 3em;}
+}
