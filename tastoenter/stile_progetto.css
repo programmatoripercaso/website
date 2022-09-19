@@ -188,7 +188,9 @@ i {
     }
 
     .mockup img {
-        display: none;
+        width: 90%;
+        margin: 0px;
+        margin-top: 50px;
     }
 
 }
