@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vai al sito</title>
-    <link rel="stylesheet" href="./stile_progetto.css">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./stile_progetto.css" type="text/css">
+    <title>Programmatori per caso</title>
 </head>
+
 <body>
-    <div class="vaialsito">
-        <img class="valsitobackground" src="./homebackground.svg" alt="">
-        <button class="bottone-vaialsito" onclick="location.href='https://alessandraalberico.github.io/'">Visita il progetto</button>
-        <div class="imgexample">
-            <img src="./triangolo.svg" class="box" id="box1">
-            <img src="./cerchio.svg" class="box" id="box2">
-            <img src="./spirale.svg" class="box" id="box3">
-        </div>
-        <p class="text">Napoli “Città della Musica” significa riconoscere alla città di Napoli la sua tradizione e le enormi energie che ha in campo musicale. Si tratta di un progetto realizzato per il il corso di Design della Comunicazione dell’Accademia di Belle Arti di Napoli. Siamo Alessandra Alberico ed Alessandra Avilia, due studentesse, che dopo aver partecipato al concorso bandito dalla città di Napoli, hanno deciso di ideare un sito vetrina con un’ampia panoramica sulla storia dei vari tipi di musica,  alla fine, evidenziando anche i gadget offerti durante gli eventi musicali dell’anno.</p>
-    </div>
+    <header>
+        <a href="../index.html"><img src="./homebackground.svg" height="300em" alt="Logo PPC"></a>
+        <h1 id="nome-progetto">Napoli città della musica</h1>
+        <p id="about-interno">Alessandra Alberico, Alessandra Avilia</p>
+        
+        <a href="https://alessandraalberico.github.io/">
+        <button id="link-progetto">Visita il progetto
+        </button>
+        </a>
+    </header>
+
+    <main>        
+        <section class="mockup">
+                <img src="./cerchio.svg">
+                <img src="./spirale.svg">
+                <img src="./triangolo.svg">
+        </section>
+        
+        <p id="testo-interno">Napoli “Città della Musica” significa riconoscere alla città di Napoli la sua tradizione e le enormi energie che ha in campo musicale. Si tratta di un progetto realizzato per il il corso di Design della Comunicazione dell’Accademia di Belle Arti di Napoli. Siamo Alessandra Alberico ed Alessandra Avilia, due studentesse, che dopo aver partecipato al concorso bandito dalla città di Napoli, hanno deciso di ideare un sito vetrina con un’ampia panoramica sulla storia dei vari tipi di musica,  alla fine, evidenziando anche i gadget offerti durante gli eventi musicali dell’anno.
+        </p>
+        
+    </main>
+
     <footer>
-    <p>© 2022 Layout pagine - Napoli Città della Musica</p> 
-        <p>Tutti i diritti sono riservati</p>
-</footer>
+        <a href="../index.html"><div id="logo-titolo"><img src="./marchio.svg" height="30em" alt="Logo esteso PPC"></div></a>
+        <nav>
+			<a href="https://www.programmatoripercaso.it/">Home</a>
+			<a href="info.html">Info</a>
+		</nav>
+    </footer>
+
 </body>
 </html>
+
+<!DOCTYPE html>
+<html>
