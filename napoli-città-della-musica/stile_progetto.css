@@ -38,26 +38,26 @@ h3 {
 
 p {
     margin:0;
-    color: #ffff
+    color: black;
 }
 
 a {
-    color: var(--contrasto);
+    color: var(--bianco);
     text-decoration: none;
     font-weight: bold;
 }
 
 header {
     text-align: center;
-    color: var(--bianco);
-    background-color: var(--nero);
+    color: var(--nero);
+    background-color: var(--bianco);
     padding: 5em 5% 0em;
 }
 
 main {
     text-align: center;
     margin: 3em auto;
-    background-color: var(--nero);
+    background-color: var(--bianco);
 }
 
 footer {
@@ -112,7 +112,7 @@ p#testo-interno {
 #link-progetto {
     border: 0px solid var(--contrasto);
     border-radius: var(--bordo);
-    background-color: var(--contrasto);
+    background-color: var(--nero);
     padding: 1em 1.5em;
     color: var(--bianco);
     font-size: 1em;
