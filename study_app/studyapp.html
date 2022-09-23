@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, iniatial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="text/javascript" src="./study.js"></script>
+</head>
+
+<body id="corpo">
+  <div id="study-app">
+    <div id="container">
+      <div id="header" class="row">
+        <div class="col"><img id="logo" src="./1x/Risorsa 2.png"></div>
+        <div class="col"></div>
+        <div class="col">
+        <button id="setting" type="button">setting</button>
+      </div>
+      </div>
+      <div id="buttons">
+        <button id="work">study time</button>
+        <button id="break">short break</button>
+        <button id="longbreak">long break</button>
+      </div>
+      <div id="timer" class="col-sm-12">
+        <div id="time" class="col-sm-12">
+          <span id="minutes">50</span>
+          <span id="colon">:</span>
+          <span id="seconds">00</span>
+          <img id="gif" width="70%">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modale -->
+  <div id="modal1" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content" id="dialog">
+        <div class="modal-header">
+          <h5 class="modal-title">TIMER SETTINGS</h5>
+          <button type="button" id="closeX" class="btn-close" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="settingsForm">
+            <div class="form-row">
+              <div class="col-md-4">
+                <label for="sMinutes">study time</label>
+                <input type="number" class="form-control" id="sMinutes" min="0" max="60" value="50">
+              </div>
+              <div class="col-md-4">
+                <label for="sbMinutes">short break</label>
+                <input type="number" class="form-control" id="sbMinutes" min="0" max="60" value="10">
+              </div>
+              <div class="col-md-4">
+              <label for="lbMinutes">long break</label>
+              <input type="number" class="form-control" id="lbMinutes" min="0" max="60" value="30">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="btnClose">close</button>
+          <button type="button" class="btn btn-primary" id="btnSave">save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
