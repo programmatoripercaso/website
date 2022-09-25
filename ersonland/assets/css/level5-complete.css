@@ -1,0 +1,15 @@
+.container__livello5_complete-img {
+	position: relative;
+	top:3rem;
+	height: auto;
+	width: 1000px;
+	margin-left: 10%;
+}
+
+.container__livello5_complete-img a {
+	position: absolute;
+	top: 75.5%;
+	right: 24%;
+	cursor: pointer;
+	opacity: 0%;
+}

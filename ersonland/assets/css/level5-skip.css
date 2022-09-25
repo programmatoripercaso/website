@@ -1,0 +1,15 @@
+.container__livello5_skip-img {
+	position: relative;
+	top:3rem;
+	height: auto;
+	width: 1000px;
+	margin-left: 10%;
+}
+
+.container__livello5_skip-img a {
+	position: absolute;
+	top: 74%;
+	right: 23%;
+	cursor: pointer;
+	opacity: 0%;
+}
