@@ -1,0 +1,39 @@
+.center__image-tutorial {
+	margin-top: 8%;
+	text-align: center;
+	position: relative;
+}
+
+.center__image-tutorial h1 {
+	white-space: pre-line;
+}
+
+.center__image-tutorial p {
+	white-space: pre-line;
+}
+
+.container__tutorial-img-1 img {
+	position: relative;
+	width: 30%;
+	height: auto;
+}
+
+.container__tutorial-img-2 img {
+	position: relative;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.center__image-tutorial a {
+	position: absolute;
+	opacity: 0%;
+	right: 46%;
+	top: 101%;
+	opacity: 0%;
+}
+
+#Inizia {
+	position: absolute;
+	right: 46.5%;
+	top: 101%;
+}

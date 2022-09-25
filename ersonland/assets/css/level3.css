@@ -1,0 +1,19 @@
+.container__livello3-img {
+	position: relative;
+	top:5rem;
+	height: auto;
+	width: 1000px;
+}
+
+.container__livello_3-img img {
+	position: relative;
+}
+
+
+.container__livello3-img a {
+	position: absolute;
+	top: 53%;
+	right: 35%;
+	cursor: pointer;
+	opacity: 0%;
+}
