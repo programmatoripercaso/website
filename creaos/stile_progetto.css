@@ -46,11 +46,43 @@ a {
     font-weight: bold;
 }
 
-header {
+header{
+	background-image:url("Homepage.jpg");
     text-align: center;
-    color: var(--bianco);
-    background-color: var(--fondoscuro);
     padding: 5em 5%;
+}
+header h1{
+    text-transform: uppercase;
+    font-size:2em;
+    margin:0;
+}
+.box{
+	margin: 10em;
+}
+#link-progetto {
+	margin:40px;
+	background:none;
+	outline:none;
+	cursor:pointer;
+	padding:10px 20px;
+	border:solid 3px white;
+	border-radius:250px;
+	font-family: Acrom, Montserrat, Roboto, Tahoma, Verdana, Arial, sans-serif;
+	font-size:12pt;
+	color:white;
+	text-align:center;
+	text-decoration:none;	
+}
+#link-progetto a:link{
+	text-decoration:none;
+}
+#link-progetto a{
+	 color:white;
+}
+#link-progetto:hover {
+  border: solid 3px Chartreuse;;
+  border-radius: 250px;
+  color: Chartreuse;
 }
 
 main {
