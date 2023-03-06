@@ -47,7 +47,7 @@ a {
 }
 
 header{
-	background-image:url("Homepage.jpg");
+	background-color:darkorchid;
     text-align: center;
     padding: 5em 5%;
 }
@@ -57,7 +57,7 @@ header h1{
     margin:0;
 }
 .box{
-	margin: 10em;
+	margin: 1em;
 }
 #link-progetto {
 	margin:40px;
